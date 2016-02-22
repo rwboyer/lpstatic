@@ -4,4 +4,8 @@ $(document).ready(function() {
   $('.top-bar .top-bar-section ul li a').smoothScroll({
     offset: -79
   });
+  $('.top-bar li').on( 'click', function(e){
+    $('li.active').removeClass('active');
+    $(this).addClass('active');
+  });
 });

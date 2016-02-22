@@ -466,8 +466,8 @@ body {
 
 /* line 502, /Volumes/LaCie2/dev/logan-patrone/bower_components/foundation/scss/foundation/components/_global.scss */
 body {
-  background: #fff;
-  color: #222;
+  background: #222222;
+  color: #CCCCCC;
   cursor: auto;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-style: normal;
@@ -6826,7 +6826,7 @@ p {
 /* Default header styles */
 /* line 255, /Volumes/LaCie2/dev/logan-patrone/bower_components/foundation/scss/foundation/components/_type.scss */
 h1, h2, h3, h4, h5, h6 {
-  color: #222222;
+  color: #CCCCCC;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -6836,7 +6836,7 @@ h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizeLegibility; }
   /* line 265, /Volumes/LaCie2/dev/logan-patrone/bower_components/foundation/scss/foundation/components/_type.scss */
   h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
-    color: #6f6f6f;
+    color: #dedede;
     font-size: 60%;
     line-height: 0; }
 
@@ -6867,7 +6867,7 @@ h6 {
 /* line 279, /Volumes/LaCie2/dev/logan-patrone/bower_components/foundation/scss/foundation/components/_type.scss */
 .subheader {
   line-height: 1.4;
-  color: #6f6f6f;
+  color: #dedede;
   font-weight: normal;
   margin-top: 0.2rem;
   margin-bottom: 0.5rem; }
@@ -6987,7 +6987,7 @@ abbr,
 acronym {
   text-transform: uppercase;
   font-size: 90%;
-  color: #222;
+  color: #CCCCCC;
   cursor: help; }
 
 /* line 397, /Volumes/LaCie2/dev/logan-patrone/bower_components/foundation/scss/foundation/components/_type.scss */
@@ -7007,20 +7007,20 @@ blockquote {
   blockquote cite {
     display: block;
     font-size: 0.8125rem;
-    color: #555555; }
+    color: #d8d8d8; }
     /* line 414, /Volumes/LaCie2/dev/logan-patrone/bower_components/foundation/scss/foundation/components/_type.scss */
     blockquote cite:before {
       content: "\2014 \0020"; }
     /* line 418, /Volumes/LaCie2/dev/logan-patrone/bower_components/foundation/scss/foundation/components/_type.scss */
     blockquote cite a,
     blockquote cite a:visited {
-      color: #555555; }
+      color: #d8d8d8; }
 
 /* line 424, /Volumes/LaCie2/dev/logan-patrone/bower_components/foundation/scss/foundation/components/_type.scss */
 blockquote,
 blockquote p {
   line-height: 1.6;
-  color: #6f6f6f; }
+  color: #dedede; }
 
 /* Microformats */
 /* line 431, /Volumes/LaCie2/dev/logan-patrone/bower_components/foundation/scss/foundation/components/_type.scss */
@@ -8254,28 +8254,27 @@ th.hide-for-touch {
 
 /* line 34, stdin */
 .contain-to-grid {
-  background-color: rgba(255, 255, 255, 0.97); }
+  background-color: rgba(0, 0, 0, 0.3); }
 
 /* line 39, stdin */
 .header-fill {
-  background: #fff;
   height: 135px; }
-  /* line 42, stdin */
+  /* line 41, stdin */
   .header-fill .tablet-mobile-logo img {
     padding-top: 30px; }
 
-/* line 48, stdin */
+/* line 47, stdin */
 .top-bar.padding-on-my-header {
   padding: 17px 0.9375rem 62px 0.9375rem; }
-  /* line 50, stdin */
+  /* line 49, stdin */
   .top-bar.padding-on-my-header ul.title-area img {
     margin: -5px 0 0 0; }
 
-/* line 55, stdin */
+/* line 54, stdin */
 .full-width {
   min-width: 100%; }
 
-/* line 59, stdin */
+/* line 58, stdin */
 p {
   line-height: 3rem;
   padding-bottom: 30px; }
@@ -8283,20 +8282,26 @@ p {
 /*
    TOPBAR NAVGATION
    ========================================================================== */
-/* line 67, stdin */
+/* line 66, stdin */
 .top-bar {
   background: none;
   padding: 45px 0.9375rem 90px 0.9375rem;
   -webkit-transition: all 0.5s ease 0.1s;
           transition: all 0.5s ease 0.1s; }
-  /* line 73, stdin */
+  /* line 72, stdin */
+  .top-bar ul.title-area li {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #FFFFFF; }
+  /* line 78, stdin */
   .top-bar ul.title-area img {
     margin: -10px 0 0 0;
     height: 100%; }
-  /* line 77, stdin */
+  /* line 82, stdin */
   .top-bar .top-bar-section ul {
     background: none; }
-    /* line 80, stdin */
+    /* line 85, stdin */
     .top-bar .top-bar-section ul li a:not(.button), .top-bar .top-bar-section ul li.active a:not(.button) {
       background: none;
       line-height: 30px;
@@ -8304,140 +8309,140 @@ p {
       padding: 0;
       margin: 5px 0 0 0;
       text-transform: uppercase; }
-    /* line 89, stdin */
+    /* line 94, stdin */
     .top-bar .top-bar-section ul li a:not(.button):hover {
       background: none;
       border-bottom: 2px solid #ef4523;
-      color: #222; }
-    /* line 95, stdin */
+      color: #CCCCCC; }
+    /* line 100, stdin */
     .top-bar .top-bar-section ul li.active a:not(.button) {
       border-bottom: 2px solid #ef4523;
-      color: #222; }
-      /* line 98, stdin */
+      color: #CCCCCC; }
+      /* line 103, stdin */
       .top-bar .top-bar-section ul li.active a:not(.button):hover {
         background: none; }
-    /* line 102, stdin */
+    /* line 107, stdin */
     .top-bar .top-bar-section ul li {
       margin-left: 30px;
       background: none; }
-      /* line 105, stdin */
+      /* line 110, stdin */
       .top-bar .top-bar-section ul li a {
-        color: #888; }
-  /* line 111, stdin */
+        color: #CCCCCC; }
+  /* line 116, stdin */
   .top-bar .top-bar-section ul li:hover:not(.has-form) > a {
-    color: #333; }
-  /* line 114, stdin */
+    color: #CCCCCC; }
+  /* line 119, stdin */
   .top-bar .top-bar-section li ul.dropdown {
     background: #fff;
     border: 1px solid #ddd;
     color: #888; }
-    /* line 118, stdin */
+    /* line 123, stdin */
     .top-bar .top-bar-section li ul.dropdown li {
       border-bottom: 1px solid #ddd;
       margin: 0;
       padding: 5px 15px 5px 15px; }
-  /* line 124, stdin */
+  /* line 129, stdin */
   .top-bar .top-bar-section li ul.dropdown li a:not(.button):hover, .top-bar .top-bar-section li ul.dropdown li a:not(.button) {
     background: none;
-    color: #222;
+    color: #CCCCCC;
     border-bottom: none;
     padding: 20px -4px 40px 45px; }
-  /* line 130, stdin */
+  /* line 135, stdin */
   .top-bar .top-bar-section ul.dropdown li:hover:not(.has-form) > a:not(.button) {
     background: none;
-    color: #222; }
-  /* line 135, stdin */
+    color: #CCCCCC; }
+  /* line 140, stdin */
   .top-bar .has-dropdown > a:after {
     border-color: rgba(0, 0, 0, 0.5) transparent transparent;
     margin-top: -5px; }
 
 @media only screen and (max-width: 1024px) {
-  /* line 145, stdin */
+  /* line 150, stdin */
   .header-fill {
     height: 45px; }
-  /* line 149, stdin */
+  /* line 154, stdin */
   .top-bar.padding-on-my-header {
     padding: 0 0 0 0; }
-  /* line 153, stdin */
+  /* line 158, stdin */
   .top-bar {
     margin-top: 0;
     padding: 0;
     float: none; }
-    /* line 158, stdin */
+    /* line 163, stdin */
     .top-bar .toggle-topbar.menu-icon a {
       color: #222; }
-      /* line 160, stdin */
+      /* line 165, stdin */
       .top-bar .toggle-topbar.menu-icon a:after {
         box-shadow: 0 10px 0 1px #222, 0 16px 0 1px #222, 0 22px 0 1px #222; }
-    /* line 165, stdin */
+    /* line 170, stdin */
     .top-bar ul.title-area img {
       margin: -2px 0 0;
       width: 145px; }
-    /* line 170, stdin */
+    /* line 175, stdin */
     .top-bar .top-bar-section ul {
       background: #333; }
-      /* line 172, stdin */
+      /* line 177, stdin */
       .top-bar .top-bar-section ul li {
         margin-left: 0; }
-      /* line 175, stdin */
+      /* line 180, stdin */
       .top-bar .top-bar-section ul li > a {
         background: #ef4523;
         border-radius: 0;
         font-size: 0.9rem; }
-      /* line 181, stdin */
+      /* line 186, stdin */
       .top-bar .top-bar-section ul li:not(.has-form) a:not(.button) {
         background: none;
         color: #fff;
         padding: 10px 15px;
         margin-top: 0; }
-        /* line 186, stdin */
+        /* line 191, stdin */
         .top-bar .top-bar-section ul li:not(.has-form) a:not(.button):hover {
           background: #ef4523;
           color: #fff;
           margin-top: 0; }
-      /* line 193, stdin */
+      /* line 198, stdin */
       .top-bar .top-bar-section ul li.active:not(.has-form) a:not(.button) {
         background: #ef4523;
         color: #fff;
         padding: 10px 15px;
         margin-top: 0; }
-        /* line 198, stdin */
+        /* line 203, stdin */
         .top-bar .top-bar-section ul li.active:not(.has-form) a:not(.button):hover {
           background: #f1593b;
           margin-top: 0; }
-  /* line 207, stdin */
+  /* line 212, stdin */
   .top-bar.padding-on-my-header ul.title-area img {
     margin: 5px 13px 0;
     width: 35px; }
-  /* line 212, stdin */
+  /* line 217, stdin */
   .top-bar.expanded {
     margin-top: 0;
     padding: 0;
     float: none; }
-    /* line 216, stdin */
+    /* line 221, stdin */
     .top-bar.expanded .toggle-topbar.menu-icon a {
       color: #fff; }
-      /* line 218, stdin */
+      /* line 223, stdin */
       .top-bar.expanded .toggle-topbar.menu-icon a:after {
         box-shadow: 0 10px 0 1px #fff, 0 16px 0 1px #fff, 0 22px 0 1px #fff; } }
 
 /*
    CONTENT SECTION
    ========================================================================== */
-/* line 234, stdin */
+/* line 239, stdin */
 .content-section .main-content {
   margin-top: 35px; }
 
-/* line 239, stdin */
+/* line 244, stdin */
 .out-of-grid {
   margin: 0;
   width: 100%;
-  height: 400px;
+  height: 600px;
   background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 59%, rgba(0, 0, 0, 0.5) 100%), url("/images/2013_006cn_24-1451332053212.JPG") no-repeat center center;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 59%, rgba(0, 0, 0, 0.5) 100%), url("/images/2013_006cn_24-1451332053212.JPG") no-repeat center center;
   background-size: cover; }
 
-/* line 247, stdin */
+/* line 252, stdin */
 .content-wrap {
   margin: 0 auto;
   max-width: 62.5rem;
@@ -8455,19 +8460,19 @@ p {
   .content-wrap:after {
     clear: both; }
 
-/* line 255, stdin */
+/* line 260, stdin */
 .overlay-content {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
   width: 100%;
   float: left; }
-  /* line 257, stdin */
+  /* line 262, stdin */
   .overlay-content h1 {
     color: #fff;
     font-weight: bold;
     text-align: center; }
 
-/* line 264, stdin */
+/* line 269, stdin */
 section#map {
   margin: 0;
   max-width: 62.5rem;
@@ -8483,7 +8488,7 @@ section#map {
   section#map:after {
     clear: both; }
 
-/* line 271, stdin */
+/* line 276, stdin */
 #map-contain {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
@@ -8495,7 +8500,7 @@ section#map {
   width: 100%;
   height: 25rem; }
 
-/* line 280, stdin */
+/* line 285, stdin */
 #map-contain iframe {
   position: absolute;
   top: 0;
@@ -8506,11 +8511,11 @@ section#map {
 /*
    FOOTER SECTION
    ========================================================================== */
-/* line 293, stdin */
+/* line 298, stdin */
 .footer-section {
   background: #333;
   min-height: 100px; }
-  /* line 296, stdin */
+  /* line 301, stdin */
   .footer-section p {
     color: #fff;
     margin-top: 50px; }
