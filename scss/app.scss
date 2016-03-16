@@ -296,7 +296,8 @@ section.brown-info{
 .home-info{
   @include grid-row();
   p{
-    margin-top: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
   #home-content{
     @include grid-column(12);
@@ -309,7 +310,7 @@ section.white-info{
   background-color: $white;
   position: relative;
   height: 600px;
-  padding-top: 5rem;
+  padding-top: 2rem;
   h1{
     font-size: 1.5rem;
   }
@@ -349,13 +350,13 @@ section.white-info{
   .inner{
     position: relative;
     background-color: $white;
-    height: 200px;
+    height: 250px;
     padding: 2rem;
     border: 0px solid $white;
     border-radius: 10px;
     transition: height .5s ease-in-out;
     &:hover{
-      height: 300px;
+      height: 350px;
       .showme{
         visibility: visible;
         opacity: 1;
@@ -448,8 +449,13 @@ button#submit-button{
     background: #563f2d;
     min-height: 100px;
     p {
-        color: #fff;
-        margin-top: 50px;
+        color: $lp-gray;
+        margin-top: 2rem;
+    }
+    h1{
+      color: $lp-gray;
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
     }
 }
 
@@ -481,7 +487,7 @@ section#contact{
   @include grid-row();
   padding-top: 5rem;
   .contact-form{
-    @include grid-column($columns:4, $center:true, $last-column:true);
+    @include grid-column($columns:6, $center:true, $last-column:true);
     text-align: center;
   }
 }
@@ -489,6 +495,6 @@ section#contact{
 #lp-info-contain{
   @include grid-row();
   #lp-info{
-    @include grid-column($columns:4, $center:true, $last-column:true);
+    @include grid-column($columns:6, $center:true, $last-column:true);
   }
 }

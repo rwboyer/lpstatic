@@ -8558,29 +8558,30 @@ section.brown-info {
     clear: both; }
   /* line 298, stdin */
   .home-info p {
-    margin-top: 5rem; }
-  /* line 301, stdin */
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
+  /* line 302, stdin */
   .home-info #home-content {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
     width: 100%;
     float: left; }
 
-/* line 306, stdin */
+/* line 307, stdin */
 section.white-info {
   margin: 0;
   width: 100%;
   background-color: #FFFFFF;
   position: relative;
   height: 600px;
-  padding-top: 5rem; }
-  /* line 313, stdin */
+  padding-top: 2rem; }
+  /* line 314, stdin */
   section.white-info h1 {
     font-size: 1.5rem; }
-  /* line 316, stdin */
+  /* line 317, stdin */
   section.white-info h1, section.white-info p {
     color: #222222; }
-  /* line 319, stdin */
+  /* line 320, stdin */
   section.white-info .gray-block {
     position: absolute;
     top: 60%;
@@ -8589,7 +8590,7 @@ section.white-info {
     width: 100%;
     background-color: #a0a8a0; }
 
-/* line 329, stdin */
+/* line 330, stdin */
 #att-info {
   margin: 0 auto;
   max-width: 62.5rem;
@@ -8602,14 +8603,14 @@ section.white-info {
   #att-info:after {
     clear: both; }
 
-/* line 333, stdin */
+/* line 334, stdin */
 #att-info-inner {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
   width: 100%;
   float: left; }
 
-/* line 337, stdin */
+/* line 338, stdin */
 #info-blocks {
   margin: 0 auto;
   max-width: 62.5rem;
@@ -8623,7 +8624,7 @@ section.white-info {
   #info-blocks:after {
     clear: both; }
 
-/* line 342, stdin */
+/* line 343, stdin */
 .info-block {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
@@ -8632,45 +8633,45 @@ section.white-info {
   text-align: center;
   background: #FFFFFF; }
   @media only screen and (min-width: 64.063em) {
-    /* line 342, stdin */
+    /* line 343, stdin */
     .info-block {
       padding-left: 0.9375rem;
       padding-right: 0.9375rem;
       width: 33.33333%;
       float: left; } }
-  /* line 349, stdin */
+  /* line 350, stdin */
   .info-block .inner {
     position: relative;
     background-color: #FFFFFF;
-    height: 200px;
+    height: 250px;
     padding: 2rem;
     border: 0px solid #FFFFFF;
     border-radius: 10px;
     -webkit-transition: height .5s ease-in-out;
             transition: height .5s ease-in-out; }
-    /* line 357, stdin */
+    /* line 358, stdin */
     .info-block .inner:hover {
-      height: 300px; }
-      /* line 359, stdin */
+      height: 350px; }
+      /* line 360, stdin */
       .info-block .inner:hover .showme {
         visibility: visible;
         opacity: 1;
         -webkit-transition: visibility 0s, opacity .5s linear;
                 transition: visibility 0s, opacity .5s linear; }
 
-/* line 368, stdin */
+/* line 369, stdin */
 .showme {
   visibility: hidden;
   opacity: 0;
   -webkit-transition: visibility 0s, opacity .5s linear;
           transition: visibility 0s, opacity .5s linear; }
 
-/* line 374, stdin */
+/* line 375, stdin */
 #practice {
   background: url("/images/wood.jpg");
   background-size: cover; }
 
-/* line 379, stdin */
+/* line 380, stdin */
 #practice-contain {
   margin: 0 auto;
   max-width: 62.5rem;
@@ -8684,7 +8685,7 @@ section.white-info {
   /* line 240, /Volumes/LaCie2/dev/logan-patrone/bower_components/foundation/scss/foundation/components/_global.scss */
   #practice-contain:after {
     clear: both; }
-  /* line 383, stdin */
+  /* line 384, stdin */
   #practice-contain #description {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
@@ -8692,32 +8693,32 @@ section.white-info {
     float: left;
     padding: 2rem;
     background: #FFFFFF; }
-    /* line 387, stdin */
+    /* line 388, stdin */
     #practice-contain #description h1, #practice-contain #description h2, #practice-contain #description h3, #practice-contain #description h4 {
       color: #222222; }
-    /* line 390, stdin */
+    /* line 391, stdin */
     #practice-contain #description p {
       color: #222222;
       text-align: left; }
-    /* line 394, stdin */
+    /* line 395, stdin */
     #practice-contain #description ul {
       color: #a0a8a0;
       list-style: none; }
     @media only screen and (min-width: 64.063em) {
-      /* line 383, stdin */
+      /* line 384, stdin */
       #practice-contain #description {
         padding-left: 0.9375rem;
         padding-right: 0.9375rem;
         width: 58.33333%;
         float: left;
         padding: 2rem; } }
-  /* line 403, stdin */
+  /* line 404, stdin */
   #practice-contain #pretty {
     display: none;
     background: url("/images/image4.jpg");
     background-size: cover; }
     @media only screen and (min-width: 64.063em) {
-      /* line 403, stdin */
+      /* line 404, stdin */
       #practice-contain #pretty {
         display: block;
         padding-left: 0.9375rem;
@@ -8728,12 +8729,12 @@ section.white-info {
 /*
    FOOTER SECTION
    ========================================================================== */
-/* line 419, stdin */
+/* line 420, stdin */
 input[type=text], textarea {
   color: #a0a8a0;
   border-radius: 10px; }
 
-/* line 424, stdin */
+/* line 425, stdin */
 input::-webkit-input-placeholder {
   color: #a0a8a0; }
 input::-moz-placeholder {
@@ -8743,7 +8744,7 @@ input:-ms-input-placeholder {
 input::placeholder {
   color: #a0a8a0; }
 
-/* line 428, stdin */
+/* line 429, stdin */
 textarea::-webkit-input-placeholder {
   color: #a0a8a0; }
 textarea::-moz-placeholder {
@@ -8753,31 +8754,36 @@ textarea:-ms-input-placeholder {
 textarea::placeholder {
   color: #a0a8a0; }
 
-/* line 432, stdin */
+/* line 433, stdin */
 textarea {
   min-height: 10rem; }
 
-/* line 436, stdin */
+/* line 437, stdin */
 button#submit-button {
   padding: 0;
   width: 2.5rem;
   height: 2.5rem;
   background-color: #a0a8a0;
   border-radius: 50%; }
-  /* line 442, stdin */
+  /* line 443, stdin */
   button#submit-button:hover {
     background-color: #768076; }
 
-/* line 447, stdin */
+/* line 448, stdin */
 .footer-section {
   background: #563f2d;
   min-height: 100px; }
-  /* line 450, stdin */
+  /* line 451, stdin */
   .footer-section p {
-    color: #fff;
-    margin-top: 50px; }
+    color: #a0a8a0;
+    margin-top: 2rem; }
+  /* line 455, stdin */
+  .footer-section h1 {
+    color: #a0a8a0;
+    font-size: 1.5rem;
+    margin-bottom: 2rem; }
 
-/* line 456, stdin */
+/* line 462, stdin */
 section#contact {
   margin: 0;
   max-width: 62.5rem;
@@ -8793,7 +8799,7 @@ section#contact {
   section#contact:after {
     clear: both; }
 
-/* line 463, stdin */
+/* line 469, stdin */
 #map-contain {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
@@ -8805,7 +8811,7 @@ section#contact {
   width: 100%;
   height: 25rem; }
 
-/* line 472, stdin */
+/* line 478, stdin */
 #map-contain iframe {
   position: absolute;
   top: 0;
@@ -8813,7 +8819,7 @@ section#contact {
   width: 100% !important;
   height: 100% !important; }
 
-/* line 480, stdin */
+/* line 486, stdin */
 #contact-contain {
   margin: 0 auto;
   max-width: 62.5rem;
@@ -8826,18 +8832,18 @@ section#contact {
   /* line 240, /Volumes/LaCie2/dev/logan-patrone/bower_components/foundation/scss/foundation/components/_global.scss */
   #contact-contain:after {
     clear: both; }
-  /* line 483, stdin */
+  /* line 489, stdin */
   #contact-contain .contact-form {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
-    width: 33.33333%;
+    width: 50%;
     float: right;
     margin-left: auto;
     margin-right: auto;
     float: none;
     text-align: center; }
 
-/* line 489, stdin */
+/* line 495, stdin */
 #lp-info-contain {
   margin: 0 auto;
   max-width: 62.5rem;
@@ -8849,11 +8855,11 @@ section#contact {
   /* line 240, /Volumes/LaCie2/dev/logan-patrone/bower_components/foundation/scss/foundation/components/_global.scss */
   #lp-info-contain:after {
     clear: both; }
-  /* line 491, stdin */
+  /* line 497, stdin */
   #lp-info-contain #lp-info {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
-    width: 33.33333%;
+    width: 50%;
     float: right;
     margin-left: auto;
     margin-right: auto;
