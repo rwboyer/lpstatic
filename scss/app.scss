@@ -309,6 +309,10 @@ section.brown-info{
   }
   #home-content{
     @include grid-column(12);
+    @media #{$large-up}{
+      display: block;
+      @include grid-column($columns:10, $center:true, $last-column:true);
+    }
   }
 }
 
@@ -345,6 +349,10 @@ section.white-info{
 
 #att-info-inner{
   @include grid-column(12);
+  @media #{$large-up}{
+    display: block;
+    @include grid-column($columns:10, $center:true, $last-column:true);
+  }
 }
 
 #info-blocks{

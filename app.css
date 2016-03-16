@@ -8575,8 +8575,19 @@ section.brown-info {
     padding-right: 0.9375rem;
     width: 100%;
     float: left; }
+    @media only screen and (min-width: 64.063em) {
+      /* line 310, stdin */
+      .home-info #home-content {
+        display: block;
+        padding-left: 0.9375rem;
+        padding-right: 0.9375rem;
+        width: 83.33333%;
+        float: right;
+        margin-left: auto;
+        margin-right: auto;
+        float: none; } }
 
-/* line 315, stdin */
+/* line 319, stdin */
 section.white-info {
   margin: 0;
   width: 100%;
@@ -8584,13 +8595,13 @@ section.white-info {
   position: relative;
   min-height: 600px;
   padding-top: 2rem; }
-  /* line 322, stdin */
+  /* line 326, stdin */
   section.white-info h1 {
     font-size: 1.5rem; }
-  /* line 325, stdin */
+  /* line 329, stdin */
   section.white-info h1, section.white-info p {
     color: #222222; }
-  /* line 328, stdin */
+  /* line 332, stdin */
   section.white-info .gray-block {
     position: absolute;
     top: 60%;
@@ -8600,11 +8611,11 @@ section.white-info {
     background-color: #a0a8a0;
     display: none; }
     @media only screen and (min-width: 64.063em) {
-      /* line 328, stdin */
+      /* line 332, stdin */
       section.white-info .gray-block {
         display: block; } }
 
-/* line 342, stdin */
+/* line 346, stdin */
 #att-info {
   margin: 0 auto;
   max-width: 62.5rem;
@@ -8617,14 +8628,25 @@ section.white-info {
   #att-info:after {
     clear: both; }
 
-/* line 346, stdin */
+/* line 350, stdin */
 #att-info-inner {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
   width: 100%;
   float: left; }
+  @media only screen and (min-width: 64.063em) {
+    /* line 350, stdin */
+    #att-info-inner {
+      display: block;
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem;
+      width: 83.33333%;
+      float: right;
+      margin-left: auto;
+      margin-right: auto;
+      float: none; } }
 
-/* line 350, stdin */
+/* line 358, stdin */
 #info-blocks {
   margin: 0 auto;
   max-width: 62.5rem;
@@ -8638,7 +8660,7 @@ section.white-info {
   #info-blocks:after {
     clear: both; }
 
-/* line 355, stdin */
+/* line 363, stdin */
 .info-block {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
@@ -8647,13 +8669,13 @@ section.white-info {
   text-align: center;
   background: #FFFFFF; }
   @media only screen and (min-width: 64.063em) {
-    /* line 355, stdin */
+    /* line 363, stdin */
     .info-block {
       padding-left: 0.9375rem;
       padding-right: 0.9375rem;
       width: 33.33333%;
       float: left; } }
-  /* line 362, stdin */
+  /* line 370, stdin */
   .info-block .inner {
     position: relative;
     background-color: #FFFFFF;
@@ -8663,29 +8685,29 @@ section.white-info {
     border-radius: 10px;
     -webkit-transition: height .5s ease-in-out;
             transition: height .5s ease-in-out; }
-    /* line 370, stdin */
+    /* line 378, stdin */
     .info-block .inner:hover {
       height: 350px; }
-      /* line 372, stdin */
+      /* line 380, stdin */
       .info-block .inner:hover .showme {
         visibility: visible;
         opacity: 1;
         -webkit-transition: visibility 0s, opacity .5s linear;
                 transition: visibility 0s, opacity .5s linear; }
 
-/* line 381, stdin */
+/* line 389, stdin */
 .showme {
   visibility: hidden;
   opacity: 0;
   -webkit-transition: visibility 0s, opacity .5s linear;
           transition: visibility 0s, opacity .5s linear; }
 
-/* line 387, stdin */
+/* line 395, stdin */
 #practice {
   background: url("/images/wood.jpg");
   background-size: cover; }
 
-/* line 392, stdin */
+/* line 400, stdin */
 #practice-contain {
   margin: 0 auto;
   max-width: 62.5rem;
@@ -8699,7 +8721,7 @@ section.white-info {
   /* line 240, /Volumes/LaCie2/dev/logan-patrone/bower_components/foundation/scss/foundation/components/_global.scss */
   #practice-contain:after {
     clear: both; }
-  /* line 396, stdin */
+  /* line 404, stdin */
   #practice-contain #description {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
@@ -8707,32 +8729,32 @@ section.white-info {
     float: left;
     padding: 2rem;
     background: #FFFFFF; }
-    /* line 400, stdin */
+    /* line 408, stdin */
     #practice-contain #description h1, #practice-contain #description h2, #practice-contain #description h3, #practice-contain #description h4 {
       color: #222222; }
-    /* line 403, stdin */
+    /* line 411, stdin */
     #practice-contain #description p {
       color: #222222;
       text-align: left; }
-    /* line 407, stdin */
+    /* line 415, stdin */
     #practice-contain #description ul {
       color: #a0a8a0;
       list-style: none; }
     @media only screen and (min-width: 64.063em) {
-      /* line 396, stdin */
+      /* line 404, stdin */
       #practice-contain #description {
         padding-left: 0.9375rem;
         padding-right: 0.9375rem;
         width: 58.33333%;
         float: left;
         padding: 2rem; } }
-  /* line 416, stdin */
+  /* line 424, stdin */
   #practice-contain #pretty {
     display: none;
     background: url("/images/image4.jpg");
     background-size: cover; }
     @media only screen and (min-width: 64.063em) {
-      /* line 416, stdin */
+      /* line 424, stdin */
       #practice-contain #pretty {
         display: block;
         padding-left: 0.9375rem;
@@ -8743,12 +8765,12 @@ section.white-info {
 /*
    FOOTER SECTION
    ========================================================================== */
-/* line 432, stdin */
+/* line 440, stdin */
 input[type=text], textarea {
   color: #a0a8a0;
   border-radius: 10px; }
 
-/* line 437, stdin */
+/* line 445, stdin */
 input::-webkit-input-placeholder {
   color: #a0a8a0; }
 input::-moz-placeholder {
@@ -8758,7 +8780,7 @@ input:-ms-input-placeholder {
 input::placeholder {
   color: #a0a8a0; }
 
-/* line 441, stdin */
+/* line 449, stdin */
 textarea::-webkit-input-placeholder {
   color: #a0a8a0; }
 textarea::-moz-placeholder {
@@ -8768,11 +8790,11 @@ textarea:-ms-input-placeholder {
 textarea::placeholder {
   color: #a0a8a0; }
 
-/* line 445, stdin */
+/* line 453, stdin */
 textarea {
   min-height: 10rem; }
 
-/* line 449, stdin */
+/* line 457, stdin */
 button#submit-button {
   padding: 0;
   margin: 0;
@@ -8781,25 +8803,25 @@ button#submit-button {
   background-color: #a0a8a0;
   border-radius: 50%;
   font-size: 1.5rem; }
-  /* line 457, stdin */
+  /* line 465, stdin */
   button#submit-button:hover {
     background-color: #768076; }
 
-/* line 462, stdin */
+/* line 470, stdin */
 .footer-section {
   background: #563f2d;
   min-height: 100px; }
-  /* line 465, stdin */
+  /* line 473, stdin */
   .footer-section p {
     color: #a0a8a0;
     margin-top: 2rem; }
-  /* line 469, stdin */
+  /* line 477, stdin */
   .footer-section h1 {
     color: #a0a8a0;
     font-size: 1.5rem;
     margin-bottom: 2rem; }
 
-/* line 476, stdin */
+/* line 484, stdin */
 section#contact {
   margin: 0;
   max-width: 62.5rem;
@@ -8815,7 +8837,7 @@ section#contact {
   section#contact:after {
     clear: both; }
 
-/* line 483, stdin */
+/* line 491, stdin */
 #map-contain {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
@@ -8827,7 +8849,7 @@ section#contact {
   width: 100%;
   height: 25rem; }
 
-/* line 492, stdin */
+/* line 500, stdin */
 #map-contain iframe {
   position: absolute;
   top: 0;
@@ -8835,7 +8857,7 @@ section#contact {
   width: 100% !important;
   height: 100% !important; }
 
-/* line 500, stdin */
+/* line 508, stdin */
 #contact-contain {
   margin: 0 auto;
   max-width: 62.5rem;
@@ -8848,7 +8870,7 @@ section#contact {
   /* line 240, /Volumes/LaCie2/dev/logan-patrone/bower_components/foundation/scss/foundation/components/_global.scss */
   #contact-contain:after {
     clear: both; }
-  /* line 503, stdin */
+  /* line 511, stdin */
   #contact-contain .contact-form {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
@@ -8859,7 +8881,7 @@ section#contact {
     float: none;
     text-align: center; }
     @media only screen and (min-width: 64.063em) {
-      /* line 503, stdin */
+      /* line 511, stdin */
       #contact-contain .contact-form {
         display: block;
         padding-left: 0.9375rem;
@@ -8870,7 +8892,7 @@ section#contact {
         margin-right: auto;
         float: none; } }
 
-/* line 513, stdin */
+/* line 521, stdin */
 #lp-info-contain {
   margin: 0 auto;
   max-width: 62.5rem;
@@ -8882,7 +8904,7 @@ section#contact {
   /* line 240, /Volumes/LaCie2/dev/logan-patrone/bower_components/foundation/scss/foundation/components/_global.scss */
   #lp-info-contain:after {
     clear: both; }
-  /* line 515, stdin */
+  /* line 523, stdin */
   #lp-info-contain #lp-info {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
@@ -8892,7 +8914,7 @@ section#contact {
     margin-right: auto;
     float: none; }
     @media only screen and (min-width: 64.063em) {
-      /* line 515, stdin */
+      /* line 523, stdin */
       #lp-info-contain #lp-info {
         display: block;
         padding-left: 0.9375rem;
