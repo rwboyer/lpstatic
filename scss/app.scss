@@ -3,13 +3,10 @@
 // Normalize.css
 @import "normalize";
 
-/*
-RWB needs to be dark
-*/
-
 @import "settings"; // Default settings file. Uncomment each setting you need to change
 
 $primary-color: #ef4523;
+$lp-gray: #a0a8a0;
 
 // Media Query Ranges
 $small-range: (0em, 64em);
@@ -19,6 +16,8 @@ $xlarge-range: (90.063em, 120em);
 $xxlarge-range: (120.063em, 99999999em);
 
 @import "foundation";
+@import "fonts";
+
  
 /*
    HEADER SECTION
@@ -55,11 +54,6 @@ $xxlarge-range: (120.063em, 99999999em);
     min-width: 100%;
 }
  
-p {
-    line-height: 3rem;
-    padding-bottom: 30px;
-}
-
 /*
    TOPBAR NAVGATION
    ========================================================================== */
@@ -69,7 +63,7 @@ p {
     padding: 45px 0.9375rem 90px 0.9375rem;
     transition: all 0.5s ease 0.1s;
     // LOGO ADJUSTMENT
-    ul.title-area li{
+    ul.title-area li h1{
       text-transform: uppercase;
       font-size: 2rem;
       font-weight: 800;
@@ -233,20 +227,33 @@ p {
    CONTENT SECTION
    ========================================================================== */
    
+// Hero Images Only
  
- 
-.content-section {
-    .main-content {
-        margin-top: 35px;
-    }
-}
-
 .out-of-grid{
+  position: relative;
   margin: 0;
   width: 100%;
   height: 600px;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 59%, rgba(0, 0, 0, 0.5) 100%), url("/images/2013_006cn_24-1451332053212.JPG") no-repeat center center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 59%, rgba(0, 0, 0, 0.5) 100%), url("/images/constr.jpg") no-repeat center center;
   background-size: cover;
+  img{
+    position: absolute;
+    width: 20rem;
+    margin: auto;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  #home-heading{
+    h1{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+      font-size: 1.5rem;
+    }
+  }
 }
 
 .content-wrap{
@@ -254,7 +261,6 @@ p {
   position: relative;
   padding: 3rem;
   top: 50%;
-  transform: translateY(-50%);
 }
 
 .overlay-content{
@@ -264,9 +270,190 @@ p {
     font-weight: bold;
     text-align: center;
   }
+  transform: translateY(-50%);
 }
 
-section#map{
+//Main Content
+
+h1{
+  text-align: center;
+  text-transform: uppercase;
+}
+
+p{
+  text-align: center;
+}
+
+section.brown-info{
+  margin: 0;
+  width: 100%;
+  background-color: #563f2d;
+  h1, p{
+    color: $white;
+  }
+}
+
+.home-info{
+  @include grid-row();
+  p{
+    margin-top: 5rem;
+  }
+  #home-content{
+    @include grid-column(12);
+  }
+}
+
+section.white-info{
+  margin: 0;
+  width: 100%;
+  background-color: $white;
+  position: relative;
+  height: 600px;
+  padding-top: 5rem;
+  h1{
+    font-size: 1.5rem;
+  }
+  h1, p{
+    color: $jet;
+  }
+  .gray-block{
+    position: absolute;
+    top: 60%;
+    left: 0;
+    height: 40%;
+    width: 100%;
+    background-color: $lp-gray;
+  }
+}
+
+#att-info{
+  @include grid-row();
+}
+
+#att-info-inner{
+  @include grid-column(12);
+}
+
+#info-blocks{
+  @include grid-row();
+  padding: 1rem;
+}
+
+.info-block{
+  @include grid-column(12);
+  text-align: center;
+  background: $white;
+  @media #{$large-up}{
+    @include grid-column(4);
+  }
+  .inner{
+    position: relative;
+    background-color: $white;
+    height: 200px;
+    padding: 2rem;
+    border: 0px solid $white;
+    border-radius: 10px;
+    transition: height .5s ease-in-out;
+    &:hover{
+      height: 300px;
+      .showme{
+        visibility: visible;
+        opacity: 1;
+        transition: visibility 0s, opacity .5s linear;
+      }
+    }
+  }
+}
+
+.showme{
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity .5s linear;
+}
+
+#practice{
+  background: url('/images/wood.jpg');
+  background-size: cover;
+}
+
+#practice-contain{
+  @include grid-row();
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  #description{
+    @include grid-column(12);
+    padding: 2rem;
+    background: $white;
+    h1, h2, h3, h4{
+      color: $jet;
+    }
+    p {
+      color: $jet;
+      text-align: left;
+    }
+    ul {
+      color: $lp-gray;
+      list-style: none;
+    }
+    @media #{$large-up}{
+      @include grid-column(7);
+      padding: 2rem;
+    }
+  }
+  #pretty{
+    display: none;
+    background: url('/images/image4.jpg');
+    background-size: cover;
+    @media #{$large-up}{
+      display: block;
+      @include grid-column(5);
+    }
+  }
+}
+ 
+ 
+/*
+   FOOTER SECTION
+   ========================================================================== */
+   
+input[type=text], textarea{
+  color: $lp-gray;
+  border-radius:10px;
+}
+
+input::placeholder{
+  color: $lp-gray;
+}
+
+textarea::placeholder{
+  color: $lp-gray;
+}
+
+textarea{
+  min-height: 10rem;
+}
+
+button#submit-button{
+  padding: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: $lp-gray;
+  border-radius: 50%;
+  &:hover{
+    background-color: scale-color($lp-gray, $lightness: -25%);
+  }
+}
+ 
+.footer-section {
+    background: #563f2d;
+    min-height: 100px;
+    p {
+        color: #fff;
+        margin-top: 50px;
+    }
+}
+
+section#contact{
   @include grid-row($behavior:'collapse');
   margin: 0;
   max-width: initial;
@@ -289,17 +476,19 @@ section#map{
   width: 100% !important;
   height: 100% !important;
 }
- 
- 
-/*
-   FOOTER SECTION
-   ========================================================================== */
- 
-.footer-section {
-    background: #333;
-    min-height: 100px;
-    p {
-        color: #fff;
-        margin-top: 50px;
-    }
+
+#contact-contain{
+  @include grid-row();
+  padding-top: 5rem;
+  .contact-form{
+    @include grid-column($columns:4, $center:true, $last-column:true);
+    text-align: center;
+  }
+}
+
+#lp-info-contain{
+  @include grid-row();
+  #lp-info{
+    @include grid-column($columns:4, $center:true, $last-column:true);
+  }
 }
