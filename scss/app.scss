@@ -274,7 +274,7 @@ $xxlarge-range: (120.063em, 99999999em);
 .overlay-content{
   @include grid-column(12);
   h1{
-    color: #fff;
+    color: $white;
     font-weight: bold;
     text-align: center;
   }
@@ -286,6 +286,7 @@ $xxlarge-range: (120.063em, 99999999em);
 h1{
   text-align: center;
   text-transform: uppercase;
+  color: $white;
 }
 
 p{
