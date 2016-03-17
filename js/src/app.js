@@ -23,6 +23,6 @@ function getQueryVariable(variable) {
 if (window.location.search) {
      var showModal = getQueryVariable('showModal');
      if (showModal == 'yes') {
-          $('#one').foundation('reveal', 'open');
+          $('#contact-success').foundation('reveal', 'open');
      }
 }

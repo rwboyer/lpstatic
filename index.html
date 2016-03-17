@@ -119,6 +119,7 @@
   
     <div class="footer-section">
       <form action="http://formspree.io/rwboyer@mac.com" method="post">
+        <input type="hidden" name="_next" value="http://logan-patrone.s3-website-us-east-1.amazonaws.com/?showModal=yes"/>
         <div id="contact-contain">
           <div class="contact-form">
             <h1>Contact Us</h1>
@@ -140,6 +141,12 @@
           </div>
         </div>
       </form>
+      <div id="contact-success" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+        <h2 id="modalTitle">Thank You For Contacting Logan & Patrone, LLC</h2>
+        <p class="lead">One of our legal professionals will be in touch promptly.</p>
+        <p>The attorneys at Logan & Petrone, LLC provide corporate and litigation services to all parties involved in the construction process; owners, contractors, subcontractors, suppliers, architects, engineers and sureties. Our attorneys are admitted to practice in Delaware, Pennsylvania, Maryland and New Jersey.</p>
+        <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+      </div>
       <div id="lp-info-contain">
         <div id="lp-info">
           <p>One Corporate Commons<br>100 Commons Boulevard, Suite 300<br>New Castle, DE 19720</p>

@@ -520,6 +520,14 @@ section#contact{
   }
 }
 
+#contact-success{
+  background-color: #563f2d;
+  border: none;
+  h2{
+    text-align: center;
+  }
+}
+
 #lp-info-contain{
   @include grid-row();
   #lp-info{
