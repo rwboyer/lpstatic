@@ -8688,8 +8688,8 @@ section.white-info {
   /* line 383, stdin */
   .info-block a.bio {
     display: block;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    width: 10rem;
+    margin: auto;
     padding: 0.3125rem;
     background-color: #563f2d;
     color: #FFFFFF;

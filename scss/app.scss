@@ -382,8 +382,8 @@ section.white-info{
   }
   a.bio{
     display: block;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    width: 10rem;
+    margin: auto;
     padding: rem-calc(5);
     background-color: #563f2d;
     color: $white;
