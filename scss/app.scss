@@ -325,7 +325,7 @@ section.white-info{
   position: relative;
   padding-top: 2rem;
   @media #{$large-up}{
-    min-height: rem-calc(650);
+    min-height: rem-calc(675);
   }    
   h1{
     font-size: 1.5rem;
@@ -368,7 +368,9 @@ section.white-info{
   @include grid-column(12);
   position: relative;
   text-align: center;
-  background: $white;
+  background-color: $white;
+  border: 0px solid $white;
+  border-radius: 10px;
   h3{
     margin-top: 1rem;
     margin-bottom: 0;
@@ -398,21 +400,21 @@ section.white-info{
   @media #{$large-up}{
     @include grid-column(4);
     padding: 0;
-  }
-  .inner{
-    position: relative;
-    background-color: $white;
-    //height: 250px;
-    padding: 2rem;
-    border: 0px solid $white;
-    border-radius: 10px;
     &:hover{
       .showme{
         max-height: 10rem;
         visibility: visible;
         opacity: 1;
       }
+      .info-bottom-arrow{
+        display: none;
+      }
     }
+  }
+  .inner{
+    position: relative;
+    //height: 250px;
+    padding: 2rem;
   }
 }
 

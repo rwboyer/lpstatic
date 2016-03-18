@@ -8599,7 +8599,7 @@ section.white-info {
   @media only screen and (min-width: 64.063em) {
     /* line 321, stdin */
     section.white-info {
-      min-height: 40.625rem; } }
+      min-height: 42.1875rem; } }
   /* line 330, stdin */
   section.white-info h1 {
     font-size: 1.5rem; }
@@ -8673,17 +8673,19 @@ section.white-info {
   float: left;
   position: relative;
   text-align: center;
-  background: #FFFFFF; }
-  /* line 372, stdin */
+  background-color: #FFFFFF;
+  border: 0px solid #FFFFFF;
+  border-radius: 10px; }
+  /* line 374, stdin */
   .info-block h3 {
     margin-top: 1rem;
     margin-bottom: 0;
     text-transform: uppercase;
     color: #222222; }
-  /* line 378, stdin */
+  /* line 380, stdin */
   .info-block p {
     margin-bottom: 0; }
-  /* line 381, stdin */
+  /* line 383, stdin */
   .info-block a.bio {
     display: block;
     width: 100%;
@@ -8695,7 +8697,7 @@ section.white-info {
     font-family: "antonioregular";
     font-size: 1.2rem;
     text-transform: uppercase; }
-  /* line 393, stdin */
+  /* line 395, stdin */
   .info-block .fa {
     margin: 1rem 0 0 0;
     color: #563f2d;
@@ -8707,21 +8709,21 @@ section.white-info {
       padding-right: 0.9375rem;
       width: 33.33333%;
       float: left;
-      padding: 0; } }
-  /* line 402, stdin */
+      padding: 0; }
+      /* line 404, stdin */
+      .info-block:hover .showme {
+        max-height: 10rem;
+        visibility: visible;
+        opacity: 1; }
+      /* line 409, stdin */
+      .info-block:hover .info-bottom-arrow {
+        display: none; } }
+  /* line 414, stdin */
   .info-block .inner {
     position: relative;
-    background-color: #FFFFFF;
-    padding: 2rem;
-    border: 0px solid #FFFFFF;
-    border-radius: 10px; }
-    /* line 410, stdin */
-    .info-block .inner:hover .showme {
-      max-height: 10rem;
-      visibility: visible;
-      opacity: 1; }
+    padding: 2rem; }
 
-/* line 419, stdin */
+/* line 421, stdin */
 .info-bottom-arrow {
   display: none;
   position: absolute;
@@ -8730,10 +8732,10 @@ section.white-info {
   text-align: center;
   background: none; }
   @media only screen and (min-width: 64.063em) {
-    /* line 419, stdin */
+    /* line 421, stdin */
     .info-bottom-arrow {
       display: block; } }
-  /* line 429, stdin */
+  /* line 431, stdin */
   .info-bottom-arrow .fa {
     color: #222222;
     background-color: #FFFFFF;
@@ -8743,7 +8745,7 @@ section.white-info {
     width: 4rem;
     border-radius: 50%; }
 
-/* line 440, stdin */
+/* line 442, stdin */
 .showme {
   max-height: 0;
   overflow: hidden;
@@ -8752,12 +8754,12 @@ section.white-info {
   -webkit-transition: visibility 0s, opacity .5s linear, height 1s;
           transition: visibility 0s, opacity .5s linear, height 1s; }
 
-/* line 448, stdin */
+/* line 450, stdin */
 #practice {
   background: url("/images/wood.jpg");
   background-size: cover; }
 
-/* line 453, stdin */
+/* line 455, stdin */
 #practice-contain {
   margin: 0 auto;
   max-width: 62.5rem;
@@ -8771,7 +8773,7 @@ section.white-info {
   /* line 240, /Volumes/LaCie2/dev/logan-patrone/bower_components/foundation/scss/foundation/components/_global.scss */
   #practice-contain:after {
     clear: both; }
-  /* line 457, stdin */
+  /* line 459, stdin */
   #practice-contain #description {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
@@ -8779,32 +8781,32 @@ section.white-info {
     float: left;
     padding: 2rem;
     background: #FFFFFF; }
-    /* line 461, stdin */
+    /* line 463, stdin */
     #practice-contain #description h1, #practice-contain #description h2, #practice-contain #description h3, #practice-contain #description h4 {
       color: #222222; }
-    /* line 464, stdin */
+    /* line 466, stdin */
     #practice-contain #description p {
       color: #222222;
       text-align: left; }
-    /* line 468, stdin */
+    /* line 470, stdin */
     #practice-contain #description ul {
       color: #a0a8a0;
       list-style: none; }
     @media only screen and (min-width: 64.063em) {
-      /* line 457, stdin */
+      /* line 459, stdin */
       #practice-contain #description {
         padding-left: 0.9375rem;
         padding-right: 0.9375rem;
         width: 58.33333%;
         float: left;
         padding: 2rem; } }
-  /* line 477, stdin */
+  /* line 479, stdin */
   #practice-contain #pretty {
     display: none;
     background: url("/images/image4.jpg");
     background-size: cover; }
     @media only screen and (min-width: 64.063em) {
-      /* line 477, stdin */
+      /* line 479, stdin */
       #practice-contain #pretty {
         display: block;
         padding-left: 0.9375rem;
@@ -8815,12 +8817,12 @@ section.white-info {
 /*
    FOOTER SECTION
    ========================================================================== */
-/* line 493, stdin */
+/* line 495, stdin */
 input[type=text], textarea {
   color: #a0a8a0;
   border-radius: 10px; }
 
-/* line 498, stdin */
+/* line 500, stdin */
 input::-webkit-input-placeholder {
   color: #a0a8a0; }
 input::-moz-placeholder {
@@ -8830,7 +8832,7 @@ input:-ms-input-placeholder {
 input::placeholder {
   color: #a0a8a0; }
 
-/* line 502, stdin */
+/* line 504, stdin */
 textarea::-webkit-input-placeholder {
   color: #a0a8a0; }
 textarea::-moz-placeholder {
@@ -8840,11 +8842,11 @@ textarea:-ms-input-placeholder {
 textarea::placeholder {
   color: #a0a8a0; }
 
-/* line 506, stdin */
+/* line 508, stdin */
 textarea {
   min-height: 10rem; }
 
-/* line 510, stdin */
+/* line 512, stdin */
 button#submit-button {
   padding: 0;
   margin: 0;
@@ -8853,25 +8855,25 @@ button#submit-button {
   background-color: #a0a8a0;
   border-radius: 50%;
   font-size: 1.5rem; }
-  /* line 518, stdin */
+  /* line 520, stdin */
   button#submit-button:hover {
     background-color: #768076; }
 
-/* line 523, stdin */
+/* line 525, stdin */
 .footer-section {
   background: #563f2d;
   min-height: 100px; }
-  /* line 526, stdin */
+  /* line 528, stdin */
   .footer-section p {
     color: #a0a8a0;
     margin-top: 2rem; }
-  /* line 530, stdin */
+  /* line 532, stdin */
   .footer-section h1 {
     color: #a0a8a0;
     font-size: 1.5rem;
     margin-bottom: 2rem; }
 
-/* line 537, stdin */
+/* line 539, stdin */
 section#contact {
   margin: 0;
   max-width: 62.5rem;
@@ -8887,7 +8889,7 @@ section#contact {
   section#contact:after {
     clear: both; }
 
-/* line 544, stdin */
+/* line 546, stdin */
 #map-contain {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
@@ -8899,7 +8901,7 @@ section#contact {
   width: 100%;
   height: 25rem; }
 
-/* line 553, stdin */
+/* line 555, stdin */
 #map-contain iframe {
   position: absolute;
   top: 0;
@@ -8907,7 +8909,7 @@ section#contact {
   width: 100% !important;
   height: 100% !important; }
 
-/* line 561, stdin */
+/* line 563, stdin */
 #contact-contain {
   margin: 0 auto;
   max-width: 62.5rem;
@@ -8920,7 +8922,7 @@ section#contact {
   /* line 240, /Volumes/LaCie2/dev/logan-patrone/bower_components/foundation/scss/foundation/components/_global.scss */
   #contact-contain:after {
     clear: both; }
-  /* line 564, stdin */
+  /* line 566, stdin */
   #contact-contain .contact-form {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
@@ -8931,7 +8933,7 @@ section#contact {
     float: none;
     text-align: center; }
     @media only screen and (min-width: 64.063em) {
-      /* line 564, stdin */
+      /* line 566, stdin */
       #contact-contain .contact-form {
         display: block;
         padding-left: 0.9375rem;
@@ -8942,15 +8944,15 @@ section#contact {
         margin-right: auto;
         float: none; } }
 
-/* line 574, stdin */
+/* line 576, stdin */
 #contact-success {
   background-color: #563f2d;
   border: none; }
-  /* line 577, stdin */
+  /* line 579, stdin */
   #contact-success h2 {
     text-align: center; }
 
-/* line 582, stdin */
+/* line 584, stdin */
 #lp-info-contain {
   margin: 0 auto;
   max-width: 62.5rem;
@@ -8962,7 +8964,7 @@ section#contact {
   /* line 240, /Volumes/LaCie2/dev/logan-patrone/bower_components/foundation/scss/foundation/components/_global.scss */
   #lp-info-contain:after {
     clear: both; }
-  /* line 584, stdin */
+  /* line 586, stdin */
   #lp-info-contain #lp-info {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
@@ -8972,7 +8974,7 @@ section#contact {
     margin-right: auto;
     float: none; }
     @media only screen and (min-width: 64.063em) {
-      /* line 584, stdin */
+      /* line 586, stdin */
       #lp-info-contain #lp-info {
         display: block;
         padding-left: 0.9375rem;
