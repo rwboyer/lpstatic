@@ -323,8 +323,10 @@ section.white-info{
   width: 100%;
   background-color: $white;
   position: relative;
-  min-height: 600px;
   padding-top: 2rem;
+  @media #{$large-up}{
+    min-height: rem-calc(650);
+  }    
   h1{
     font-size: 1.5rem;
   }
@@ -364,34 +366,80 @@ section.white-info{
 
 .info-block{
   @include grid-column(12);
+  position: relative;
   text-align: center;
   background: $white;
+  h3{
+    margin-top: 1rem;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    color: $jet;
+  }
+  p{
+    margin-bottom: 0;
+  }
+  a.bio{
+    display: block;
+    width: 100%;
+    margin: auto;
+    padding: rem-calc(5);
+    background-color: #563f2d;
+    color: $white;
+    border-radius: 5px;
+    font-family: $header-font-family;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+  .fa{
+    margin: 1rem 0 0 0;
+    color: #563f2d;
+    font-size: 2rem;
+  }
   @media #{$large-up}{
     @include grid-column(4);
+    padding: 0;
   }
   .inner{
     position: relative;
     background-color: $white;
-    height: 250px;
+    //height: 250px;
     padding: 2rem;
     border: 0px solid $white;
     border-radius: 10px;
-    transition: height .5s ease-in-out;
     &:hover{
-      height: 350px;
       .showme{
+        max-height: 10rem;
         visibility: visible;
         opacity: 1;
-        transition: visibility 0s, opacity .5s linear;
       }
     }
   }
 }
 
+.info-bottom-arrow{
+  display: block;
+  position: absolute;
+  bottom: rem-calc(-25);
+  width: 100%;
+  text-align: center;
+  background: none;
+  .fa{
+    color: $jet;
+    background-color: $white;
+    padding: 1rem 0 0 0;
+    margin: 0;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+  }
+}
+
 .showme{
+  max-height: 0;
+  overflow: hidden;
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0s, opacity .5s linear;
+  transition: visibility 0s, opacity .5s linear, height 1s;
 }
 
 #practice{
