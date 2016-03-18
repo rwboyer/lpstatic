@@ -417,12 +417,15 @@ section.white-info{
 }
 
 .info-bottom-arrow{
-  display: block;
+  display: none;
   position: absolute;
   bottom: rem-calc(-25);
   width: 100%;
   text-align: center;
   background: none;
+  @media #{$large-up}{
+    display: block;
+  }
   .fa{
     color: $jet;
     background-color: $white;

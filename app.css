@@ -8723,13 +8723,17 @@ section.white-info {
 
 /* line 419, stdin */
 .info-bottom-arrow {
-  display: block;
+  display: none;
   position: absolute;
   bottom: -1.5625rem;
   width: 100%;
   text-align: center;
   background: none; }
-  /* line 426, stdin */
+  @media only screen and (min-width: 64.063em) {
+    /* line 419, stdin */
+    .info-bottom-arrow {
+      display: block; } }
+  /* line 429, stdin */
   .info-bottom-arrow .fa {
     color: #222222;
     background-color: #FFFFFF;
@@ -8739,7 +8743,7 @@ section.white-info {
     width: 4rem;
     border-radius: 50%; }
 
-/* line 437, stdin */
+/* line 440, stdin */
 .showme {
   max-height: 0;
   overflow: hidden;
@@ -8748,12 +8752,12 @@ section.white-info {
   -webkit-transition: visibility 0s, opacity .5s linear, height 1s;
           transition: visibility 0s, opacity .5s linear, height 1s; }
 
-/* line 445, stdin */
+/* line 448, stdin */
 #practice {
   background: url("/images/wood.jpg");
   background-size: cover; }
 
-/* line 450, stdin */
+/* line 453, stdin */
 #practice-contain {
   margin: 0 auto;
   max-width: 62.5rem;
@@ -8767,7 +8771,7 @@ section.white-info {
   /* line 240, /Volumes/LaCie2/dev/logan-patrone/bower_components/foundation/scss/foundation/components/_global.scss */
   #practice-contain:after {
     clear: both; }
-  /* line 454, stdin */
+  /* line 457, stdin */
   #practice-contain #description {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
@@ -8775,32 +8779,32 @@ section.white-info {
     float: left;
     padding: 2rem;
     background: #FFFFFF; }
-    /* line 458, stdin */
+    /* line 461, stdin */
     #practice-contain #description h1, #practice-contain #description h2, #practice-contain #description h3, #practice-contain #description h4 {
       color: #222222; }
-    /* line 461, stdin */
+    /* line 464, stdin */
     #practice-contain #description p {
       color: #222222;
       text-align: left; }
-    /* line 465, stdin */
+    /* line 468, stdin */
     #practice-contain #description ul {
       color: #a0a8a0;
       list-style: none; }
     @media only screen and (min-width: 64.063em) {
-      /* line 454, stdin */
+      /* line 457, stdin */
       #practice-contain #description {
         padding-left: 0.9375rem;
         padding-right: 0.9375rem;
         width: 58.33333%;
         float: left;
         padding: 2rem; } }
-  /* line 474, stdin */
+  /* line 477, stdin */
   #practice-contain #pretty {
     display: none;
     background: url("/images/image4.jpg");
     background-size: cover; }
     @media only screen and (min-width: 64.063em) {
-      /* line 474, stdin */
+      /* line 477, stdin */
       #practice-contain #pretty {
         display: block;
         padding-left: 0.9375rem;
@@ -8811,12 +8815,12 @@ section.white-info {
 /*
    FOOTER SECTION
    ========================================================================== */
-/* line 490, stdin */
+/* line 493, stdin */
 input[type=text], textarea {
   color: #a0a8a0;
   border-radius: 10px; }
 
-/* line 495, stdin */
+/* line 498, stdin */
 input::-webkit-input-placeholder {
   color: #a0a8a0; }
 input::-moz-placeholder {
@@ -8826,7 +8830,7 @@ input:-ms-input-placeholder {
 input::placeholder {
   color: #a0a8a0; }
 
-/* line 499, stdin */
+/* line 502, stdin */
 textarea::-webkit-input-placeholder {
   color: #a0a8a0; }
 textarea::-moz-placeholder {
@@ -8836,11 +8840,11 @@ textarea:-ms-input-placeholder {
 textarea::placeholder {
   color: #a0a8a0; }
 
-/* line 503, stdin */
+/* line 506, stdin */
 textarea {
   min-height: 10rem; }
 
-/* line 507, stdin */
+/* line 510, stdin */
 button#submit-button {
   padding: 0;
   margin: 0;
@@ -8849,25 +8853,25 @@ button#submit-button {
   background-color: #a0a8a0;
   border-radius: 50%;
   font-size: 1.5rem; }
-  /* line 515, stdin */
+  /* line 518, stdin */
   button#submit-button:hover {
     background-color: #768076; }
 
-/* line 520, stdin */
+/* line 523, stdin */
 .footer-section {
   background: #563f2d;
   min-height: 100px; }
-  /* line 523, stdin */
+  /* line 526, stdin */
   .footer-section p {
     color: #a0a8a0;
     margin-top: 2rem; }
-  /* line 527, stdin */
+  /* line 530, stdin */
   .footer-section h1 {
     color: #a0a8a0;
     font-size: 1.5rem;
     margin-bottom: 2rem; }
 
-/* line 534, stdin */
+/* line 537, stdin */
 section#contact {
   margin: 0;
   max-width: 62.5rem;
@@ -8883,7 +8887,7 @@ section#contact {
   section#contact:after {
     clear: both; }
 
-/* line 541, stdin */
+/* line 544, stdin */
 #map-contain {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
@@ -8895,7 +8899,7 @@ section#contact {
   width: 100%;
   height: 25rem; }
 
-/* line 550, stdin */
+/* line 553, stdin */
 #map-contain iframe {
   position: absolute;
   top: 0;
@@ -8903,7 +8907,7 @@ section#contact {
   width: 100% !important;
   height: 100% !important; }
 
-/* line 558, stdin */
+/* line 561, stdin */
 #contact-contain {
   margin: 0 auto;
   max-width: 62.5rem;
@@ -8916,7 +8920,7 @@ section#contact {
   /* line 240, /Volumes/LaCie2/dev/logan-patrone/bower_components/foundation/scss/foundation/components/_global.scss */
   #contact-contain:after {
     clear: both; }
-  /* line 561, stdin */
+  /* line 564, stdin */
   #contact-contain .contact-form {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
@@ -8927,7 +8931,7 @@ section#contact {
     float: none;
     text-align: center; }
     @media only screen and (min-width: 64.063em) {
-      /* line 561, stdin */
+      /* line 564, stdin */
       #contact-contain .contact-form {
         display: block;
         padding-left: 0.9375rem;
@@ -8938,15 +8942,15 @@ section#contact {
         margin-right: auto;
         float: none; } }
 
-/* line 571, stdin */
+/* line 574, stdin */
 #contact-success {
   background-color: #563f2d;
   border: none; }
-  /* line 574, stdin */
+  /* line 577, stdin */
   #contact-success h2 {
     text-align: center; }
 
-/* line 579, stdin */
+/* line 582, stdin */
 #lp-info-contain {
   margin: 0 auto;
   max-width: 62.5rem;
@@ -8958,7 +8962,7 @@ section#contact {
   /* line 240, /Volumes/LaCie2/dev/logan-patrone/bower_components/foundation/scss/foundation/components/_global.scss */
   #lp-info-contain:after {
     clear: both; }
-  /* line 581, stdin */
+  /* line 584, stdin */
   #lp-info-contain #lp-info {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
@@ -8968,7 +8972,7 @@ section#contact {
     margin-right: auto;
     float: none; }
     @media only screen and (min-width: 64.063em) {
-      /* line 581, stdin */
+      /* line 584, stdin */
       #lp-info-contain #lp-info {
         display: block;
         padding-left: 0.9375rem;
