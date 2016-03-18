@@ -369,6 +369,7 @@ section.white-info{
   position: relative;
   text-align: center;
   background: none;
+  padding-bottom: 2rem;
   border: 0px solid $white;
   h3{
     margin-top: 1rem;
@@ -381,8 +382,8 @@ section.white-info{
   }
   a.bio{
     display: block;
-    width: 100%;
-    margin: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
     padding: rem-calc(5);
     background-color: #563f2d;
     color: $white;
@@ -411,14 +412,16 @@ section.white-info{
     }
   }
   .inner{
-    background-color: $white;
-    position: relative;
-    //height: 250px;
-    border-radius: 10px;
-    margin: 2rem;
-    padding: 0 0 2rem 0;
-    img{
-      padding: 1rem;
+    @media #{$large-up}{
+      background-color: $white;
+      position: relative;
+      //height: 250px;
+      border-radius: 10px;
+      margin: 2rem;
+      padding: 0 0 2rem 0;
+      img{
+        padding: 1rem;
+      }
     }
   }
 }
@@ -433,6 +436,9 @@ section.white-info{
       @include grid-column(12);
       color: $jet;
       text-transform: uppercase;
+      @media #{$small-only}{
+        font-size: 1rem;
+      }
     }
   }
   .bio-info{
@@ -489,11 +495,13 @@ section.white-info{
 }
 
 .showme{
-  max-height: 0;
-  overflow: hidden;
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s, opacity .5s linear, height 1s;
+  @media #{$large-up}{
+    max-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity .5s linear, height 1s;
+  }
 }
 
 #practice{
@@ -505,6 +513,12 @@ section.white-info{
   @include grid-row();
   padding-top: 5rem;
   padding-bottom: 5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  @media #{$large-up}{
+    padding-left: 0;
+    padding-right: 0;
+  }
   #description{
     @include grid-column(12);
     padding: 2rem;
