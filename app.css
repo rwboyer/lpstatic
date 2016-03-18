@@ -8939,7 +8939,7 @@ textarea {
 /* line 575, stdin */
 button#submit-button {
   padding: 0;
-  margin: 0;
+  margin: 1rem 0 0 0;
   width: 4rem;
   height: 4rem;
   background-color: #a0a8a0;
