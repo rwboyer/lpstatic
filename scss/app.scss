@@ -79,7 +79,8 @@ $xxlarge-range: (120.063em, 99999999em);
         li a:not(.button), li.active a:not(.button) {
             background: none;
             line-height: 30px;
-            font-size: 12px;
+            font-size: 1rem;
+            font-weight: bolder;
             padding: 0;
             margin: 5px 0 0 0;
             text-transform: uppercase;
@@ -176,10 +177,9 @@ $xxlarge-range: (120.063em, 99999999em);
                 li {
                     margin-left: 0;
                 }
-                li > a {
+                li a {
                     background: $primary-color;
                     border-radius: 0;
-                    font-size: 0.9rem;
                 }
                 // NORMAL BUTTONS
                 li:not(.has-form) a:not(.button) {
@@ -251,13 +251,12 @@ $xxlarge-range: (120.063em, 99999999em);
     left: 0;
   }
   #home-heading{
-    h1{
+    h3{
       position: absolute;
       bottom: 0;
       right: 0;
       left: 0;
       margin: auto;
-      font-size: 1.5rem;
     }
   }
   @media #{$large-up}{
@@ -284,7 +283,7 @@ $xxlarge-range: (120.063em, 99999999em);
 
 //Main Content
 
-h1{
+h1, h2, h3{
   text-align: center;
   text-transform: uppercase;
   color: $white;
@@ -292,6 +291,12 @@ h1{
 
 p{
   text-align: center;
+}
+
+em{
+  color: $jet;
+  font-style: normal;
+  font-weight: bold;
 }
 
 section.brown-info{
@@ -327,10 +332,7 @@ section.white-info{
   @media #{$large-up}{
     min-height: rem-calc(675);
   }    
-  h1{
-    font-size: 1.5rem;
-  }
-  h1, p{
+  h1, h2, h3, p{
     color: $jet;
   }
   .gray-block{
@@ -430,13 +432,15 @@ section.white-info{
   .bio-header{
     background-color: $lp-gray;
     @include grid-row();
-    h2{
+    h3{
       display: block;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      margin-bottom: 0;
       @include grid-column(12);
-      color: $jet;
+      color: $white;
       text-transform: uppercase;
       @media #{$small-only}{
-        font-size: 1rem;
       }
     }
   }
@@ -444,7 +448,7 @@ section.white-info{
     @include grid-row();
     .bio-cv{
       @include grid-column(9);
-      padding: 1rem 1rem 1rem 1rem;
+      padding: 3rem;
     }
     .bio-extra{
       @include grid-column(3);
@@ -590,9 +594,8 @@ button#submit-button{
         color: $lp-gray;
         margin-top: 2rem;
     }
-    h1{
+    h1, h2, h3{
       color: $lp-gray;
-      font-size: 1.5rem;
       margin-bottom: 2rem;
     }
 }

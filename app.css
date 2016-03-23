@@ -8346,95 +8346,95 @@ th.hide-for-touch {
     .top-bar .top-bar-section ul li a:not(.button), .top-bar .top-bar-section ul li.active a:not(.button) {
       background: none;
       line-height: 30px;
-      font-size: 12px;
+      font-size: 1rem;
+      font-weight: bolder;
       padding: 0;
       margin: 5px 0 0 0;
       text-transform: uppercase; }
-    /* line 88, stdin */
+    /* line 89, stdin */
     .top-bar .top-bar-section ul li a:not(.button):hover {
       background: none;
       border-bottom: 2px solid #ef4523;
       color: #CCCCCC; }
-    /* line 94, stdin */
+    /* line 95, stdin */
     .top-bar .top-bar-section ul li.active a:not(.button) {
       border-bottom: 2px solid #ef4523;
       color: #CCCCCC; }
-      /* line 97, stdin */
+      /* line 98, stdin */
       .top-bar .top-bar-section ul li.active a:not(.button):hover {
         background: none; }
-    /* line 101, stdin */
+    /* line 102, stdin */
     .top-bar .top-bar-section ul li {
       margin-left: 30px;
       background: none; }
-      /* line 104, stdin */
+      /* line 105, stdin */
       .top-bar .top-bar-section ul li a {
         color: #CCCCCC; }
-  /* line 110, stdin */
+  /* line 111, stdin */
   .top-bar .top-bar-section ul li:hover:not(.has-form) > a {
     color: #CCCCCC; }
-  /* line 113, stdin */
+  /* line 114, stdin */
   .top-bar .top-bar-section li ul.dropdown {
     background: #fff;
     border: 1px solid #ddd;
     color: #888; }
-    /* line 117, stdin */
+    /* line 118, stdin */
     .top-bar .top-bar-section li ul.dropdown li {
       border-bottom: 1px solid #ddd;
       margin: 0;
       padding: 5px 15px 5px 15px; }
-  /* line 123, stdin */
+  /* line 124, stdin */
   .top-bar .top-bar-section li ul.dropdown li a:not(.button):hover, .top-bar .top-bar-section li ul.dropdown li a:not(.button) {
     background: none;
     color: #CCCCCC;
     border-bottom: none;
     padding: 20px -4px 40px 45px; }
-  /* line 129, stdin */
+  /* line 130, stdin */
   .top-bar .top-bar-section ul.dropdown li:hover:not(.has-form) > a:not(.button) {
     background: none;
     color: #CCCCCC; }
-  /* line 134, stdin */
+  /* line 135, stdin */
   .top-bar .has-dropdown > a:after {
     border-color: rgba(0, 0, 0, 0.5) transparent transparent;
     margin-top: -5px; }
 
 @media only screen and (max-width: 1024px) {
-  /* line 144, stdin */
+  /* line 145, stdin */
   .header-fill {
     height: 45px; }
-  /* line 148, stdin */
+  /* line 149, stdin */
   .top-bar.padding-on-my-header {
     padding: 0 0 0 0; }
-  /* line 152, stdin */
+  /* line 153, stdin */
   .top-bar {
     margin-top: 0;
     padding: 0;
     float: none; }
-    /* line 157, stdin */
+    /* line 158, stdin */
     .top-bar .toggle-topbar.menu-icon a {
       color: #222; }
-      /* line 159, stdin */
+      /* line 160, stdin */
       .top-bar .toggle-topbar.menu-icon a:after {
         box-shadow: 0 10px 0 1px #222, 0 16px 0 1px #222, 0 22px 0 1px #222; }
-    /* line 164, stdin */
+    /* line 165, stdin */
     .top-bar ul.title-area li h1 {
       text-align: left;
       margin-left: 1rem;
       font-size: 1.5rem; }
-    /* line 169, stdin */
+    /* line 170, stdin */
     .top-bar ul.title-area img {
       margin: -2px 0 0;
       width: 145px; }
-    /* line 174, stdin */
+    /* line 175, stdin */
     .top-bar .top-bar-section ul {
       background: #333; }
-      /* line 176, stdin */
+      /* line 177, stdin */
       .top-bar .top-bar-section ul li {
         margin-left: 0; }
-      /* line 179, stdin */
-      .top-bar .top-bar-section ul li > a {
+      /* line 180, stdin */
+      .top-bar .top-bar-section ul li a {
         background: #ef4523;
-        border-radius: 0;
-        font-size: 0.9rem; }
+        border-radius: 0; }
       /* line 185, stdin */
       .top-bar .top-bar-section ul li:not(.has-form) a:not(.button) {
         background: none;
@@ -8494,19 +8494,18 @@ th.hide-for-touch {
     right: 0;
     left: 0; }
   /* line 254, stdin */
-  .out-of-grid #home-heading h1 {
+  .out-of-grid #home-heading h3 {
     position: absolute;
     bottom: 0;
     right: 0;
     left: 0;
-    margin: auto;
-    font-size: 1.5rem; }
+    margin: auto; }
   @media only screen and (min-width: 64.063em) {
     /* line 237, stdin */
     .out-of-grid {
       height: 600px; } }
 
-/* line 268, stdin */
+/* line 267, stdin */
 .content-wrap {
   margin: 0 auto;
   max-width: 62.5rem;
@@ -8522,7 +8521,7 @@ th.hide-for-touch {
   .content-wrap:after {
     clear: both; }
 
-/* line 275, stdin */
+/* line 274, stdin */
 .overlay-content {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
@@ -8530,32 +8529,38 @@ th.hide-for-touch {
   float: left;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%); }
-  /* line 277, stdin */
+  /* line 276, stdin */
   .overlay-content h1 {
     color: #FFFFFF;
     font-weight: bold;
     text-align: center; }
 
-/* line 287, stdin */
-h1 {
+/* line 286, stdin */
+h1, h2, h3 {
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF; }
 
-/* line 293, stdin */
+/* line 292, stdin */
 p {
   text-align: center; }
 
-/* line 297, stdin */
+/* line 296, stdin */
+em {
+  color: #222222;
+  font-style: normal;
+  font-weight: bold; }
+
+/* line 302, stdin */
 section.brown-info {
   margin: 0;
   width: 100%;
   background-color: #563f2d; }
-  /* line 301, stdin */
+  /* line 306, stdin */
   section.brown-info h1, section.brown-info p {
     color: #FFFFFF; }
 
-/* line 306, stdin */
+/* line 311, stdin */
 .home-info {
   margin: 0 auto;
   max-width: 62.5rem;
@@ -8567,18 +8572,18 @@ section.brown-info {
   /* line 240, /Volumes/LaCie2/dev/logan-patrone/bower_components/foundation/scss/foundation/components/_global.scss */
   .home-info:after {
     clear: both; }
-  /* line 308, stdin */
+  /* line 313, stdin */
   .home-info p {
     margin-top: 2rem;
     margin-bottom: 2rem; }
-  /* line 312, stdin */
+  /* line 317, stdin */
   .home-info #home-content {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
     width: 100%;
     float: left; }
     @media only screen and (min-width: 64.063em) {
-      /* line 312, stdin */
+      /* line 317, stdin */
       .home-info #home-content {
         display: block;
         padding-left: 0.9375rem;
@@ -8589,7 +8594,7 @@ section.brown-info {
         margin-right: auto;
         float: none; } }
 
-/* line 321, stdin */
+/* line 326, stdin */
 section.white-info {
   margin: 0;
   width: 100%;
@@ -8597,16 +8602,13 @@ section.white-info {
   position: relative;
   padding-top: 2rem; }
   @media only screen and (min-width: 64.063em) {
-    /* line 321, stdin */
+    /* line 326, stdin */
     section.white-info {
       min-height: 42.1875rem; } }
-  /* line 330, stdin */
-  section.white-info h1 {
-    font-size: 1.5rem; }
-  /* line 333, stdin */
-  section.white-info h1, section.white-info p {
+  /* line 335, stdin */
+  section.white-info h1, section.white-info h2, section.white-info h3, section.white-info p {
     color: #222222; }
-  /* line 336, stdin */
+  /* line 338, stdin */
   section.white-info .gray-block {
     position: absolute;
     top: 50%;
@@ -8616,11 +8618,11 @@ section.white-info {
     background-color: #a0a8a0;
     display: none; }
     @media only screen and (min-width: 64.063em) {
-      /* line 336, stdin */
+      /* line 338, stdin */
       section.white-info .gray-block {
         display: block; } }
 
-/* line 350, stdin */
+/* line 352, stdin */
 #att-info {
   margin: 0 auto;
   max-width: 62.5rem;
@@ -8633,14 +8635,14 @@ section.white-info {
   #att-info:after {
     clear: both; }
 
-/* line 354, stdin */
+/* line 356, stdin */
 #att-info-inner {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
   width: 100%;
   float: left; }
   @media only screen and (min-width: 64.063em) {
-    /* line 354, stdin */
+    /* line 356, stdin */
     #att-info-inner {
       display: block;
       padding-left: 0.9375rem;
@@ -8651,7 +8653,7 @@ section.white-info {
       margin-right: auto;
       float: none; } }
 
-/* line 362, stdin */
+/* line 364, stdin */
 #info-blocks {
   margin: 0 auto;
   max-width: 62.5rem;
@@ -8665,7 +8667,7 @@ section.white-info {
   #info-blocks:after {
     clear: both; }
 
-/* line 367, stdin */
+/* line 369, stdin */
 .info-block {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
@@ -8676,16 +8678,16 @@ section.white-info {
   background: none;
   padding-bottom: 2rem;
   border: 0px solid #FFFFFF; }
-  /* line 374, stdin */
+  /* line 376, stdin */
   .info-block h3 {
     margin-top: 1rem;
     margin-bottom: 0;
     text-transform: uppercase;
     color: #222222; }
-  /* line 380, stdin */
+  /* line 382, stdin */
   .info-block p {
     margin-bottom: 0; }
-  /* line 383, stdin */
+  /* line 385, stdin */
   .info-block a.bio {
     display: block;
     width: 10rem;
@@ -8697,42 +8699,42 @@ section.white-info {
     font-family: "antonioregular";
     font-size: 1.2rem;
     text-transform: uppercase; }
-  /* line 395, stdin */
+  /* line 397, stdin */
   .info-block .fa {
     margin: 1rem 0 0 0;
     color: #563f2d;
     font-size: 2rem; }
   @media only screen and (min-width: 64.063em) {
-    /* line 367, stdin */
+    /* line 369, stdin */
     .info-block {
       padding-left: 0.9375rem;
       padding-right: 0.9375rem;
       width: 33.33333%;
       float: left;
       padding: 0; }
-      /* line 404, stdin */
+      /* line 406, stdin */
       .info-block:hover .showme {
         max-height: 10rem;
         visibility: visible; }
-      /* line 408, stdin */
+      /* line 410, stdin */
       .info-block:hover .info-bottom-arrow {
         display: none; } }
   @media only screen and (min-width: 64.063em) {
-    /* line 413, stdin */
+    /* line 415, stdin */
     .info-block .inner {
       background-color: #FFFFFF;
       position: relative;
       border-radius: 10px;
       margin: 2rem;
       padding: 0 0 2rem 0; }
-      /* line 421, stdin */
+      /* line 423, stdin */
       .info-block .inner img {
         padding: 1rem; } }
 
-/* line 428, stdin */
+/* line 430, stdin */
 .bio-modal {
   padding: 0; }
-  /* line 430, stdin */
+  /* line 432, stdin */
   .bio-modal .bio-header {
     background-color: #a0a8a0;
     margin: 0 auto;
@@ -8745,20 +8747,19 @@ section.white-info {
     /* line 240, /Volumes/LaCie2/dev/logan-patrone/bower_components/foundation/scss/foundation/components/_global.scss */
     .bio-modal .bio-header:after {
       clear: both; }
-    /* line 433, stdin */
-    .bio-modal .bio-header h2 {
+    /* line 435, stdin */
+    .bio-modal .bio-header h3 {
       display: block;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      margin-bottom: 0;
       padding-left: 0.9375rem;
       padding-right: 0.9375rem;
       width: 100%;
       float: left;
-      color: #222222;
+      color: #FFFFFF;
       text-transform: uppercase; }
-      @media only screen and (max-width: 64em) {
-        /* line 433, stdin */
-        .bio-modal .bio-header h2 {
-          font-size: 1rem; } }
-  /* line 443, stdin */
+  /* line 447, stdin */
   .bio-modal .bio-info {
     margin: 0 auto;
     max-width: 62.5rem;
@@ -8770,14 +8771,14 @@ section.white-info {
     /* line 240, /Volumes/LaCie2/dev/logan-patrone/bower_components/foundation/scss/foundation/components/_global.scss */
     .bio-modal .bio-info:after {
       clear: both; }
-    /* line 445, stdin */
+    /* line 449, stdin */
     .bio-modal .bio-info .bio-cv {
       padding-left: 0.9375rem;
       padding-right: 0.9375rem;
       width: 75%;
       float: left;
-      padding: 1rem 1rem 1rem 1rem; }
-    /* line 449, stdin */
+      padding: 3rem; }
+    /* line 453, stdin */
     .bio-modal .bio-info .bio-extra {
       padding-left: 0.9375rem;
       padding-right: 0.9375rem;
@@ -8785,26 +8786,26 @@ section.white-info {
       float: left;
       padding: 0;
       text-align: center; }
-  /* line 455, stdin */
+  /* line 459, stdin */
   .bio-modal a.close-reveal-modal {
     color: #222222; }
-  /* line 458, stdin */
+  /* line 462, stdin */
   .bio-modal p {
     color: #222222;
     text-align: left;
     font-size: .8rem; }
-  /* line 463, stdin */
+  /* line 467, stdin */
   .bio-modal em {
     font-weight: bold;
     font-style: normal; }
-  /* line 467, stdin */
+  /* line 471, stdin */
   .bio-modal .fa {
     margin: 1rem 0 0 0;
     color: #563f2d;
     font-size: 2rem;
     text-align: center; }
 
-/* line 475, stdin */
+/* line 479, stdin */
 .info-bottom-arrow {
   display: none;
   position: absolute;
@@ -8813,10 +8814,10 @@ section.white-info {
   text-align: center;
   background: none; }
   @media only screen and (min-width: 64.063em) {
-    /* line 475, stdin */
+    /* line 479, stdin */
     .info-bottom-arrow {
       display: block; } }
-  /* line 485, stdin */
+  /* line 489, stdin */
   .info-bottom-arrow .fa {
     color: #222222;
     background-color: #FFFFFF;
@@ -8827,7 +8828,7 @@ section.white-info {
     border-radius: 50%; }
 
 @media only screen and (min-width: 64.063em) {
-  /* line 496, stdin */
+  /* line 500, stdin */
   .showme {
     max-height: 0;
     overflow: hidden;
@@ -8835,12 +8836,12 @@ section.white-info {
     -webkit-transition: visibility 0s, max-height 0.5s ease-in-out;
             transition: visibility 0s, max-height 0.5s ease-in-out; } }
 
-/* line 505, stdin */
+/* line 509, stdin */
 #practice {
   background: url("/images/wood.jpg");
   background-size: cover; }
 
-/* line 510, stdin */
+/* line 514, stdin */
 #practice-contain {
   margin: 0 auto;
   max-width: 62.5rem;
@@ -8857,11 +8858,11 @@ section.white-info {
   #practice-contain:after {
     clear: both; }
   @media only screen and (min-width: 64.063em) {
-    /* line 510, stdin */
+    /* line 514, stdin */
     #practice-contain {
       padding-left: 0;
       padding-right: 0; } }
-  /* line 520, stdin */
+  /* line 524, stdin */
   #practice-contain #description {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
@@ -8869,32 +8870,32 @@ section.white-info {
     float: left;
     padding: 2rem;
     background: #FFFFFF; }
-    /* line 524, stdin */
+    /* line 528, stdin */
     #practice-contain #description h1, #practice-contain #description h2, #practice-contain #description h3, #practice-contain #description h4 {
       color: #222222; }
-    /* line 527, stdin */
+    /* line 531, stdin */
     #practice-contain #description p {
       color: #222222;
       text-align: left; }
-    /* line 531, stdin */
+    /* line 535, stdin */
     #practice-contain #description ul {
       color: #a0a8a0;
       list-style: none; }
     @media only screen and (min-width: 64.063em) {
-      /* line 520, stdin */
+      /* line 524, stdin */
       #practice-contain #description {
         padding-left: 0.9375rem;
         padding-right: 0.9375rem;
         width: 58.33333%;
         float: left;
         padding: 2rem; } }
-  /* line 540, stdin */
+  /* line 544, stdin */
   #practice-contain #pretty {
     display: none;
     background: url("/images/image4.jpg");
     background-size: cover; }
     @media only screen and (min-width: 64.063em) {
-      /* line 540, stdin */
+      /* line 544, stdin */
       #practice-contain #pretty {
         display: block;
         padding-left: 0.9375rem;
@@ -8905,12 +8906,12 @@ section.white-info {
 /*
    FOOTER SECTION
    ========================================================================== */
-/* line 556, stdin */
+/* line 560, stdin */
 input[type=text], textarea {
   color: #a0a8a0;
   border-radius: 10px; }
 
-/* line 561, stdin */
+/* line 565, stdin */
 input::-webkit-input-placeholder {
   color: #a0a8a0; }
 input::-moz-placeholder {
@@ -8920,7 +8921,7 @@ input:-ms-input-placeholder {
 input::placeholder {
   color: #a0a8a0; }
 
-/* line 565, stdin */
+/* line 569, stdin */
 textarea::-webkit-input-placeholder {
   color: #a0a8a0; }
 textarea::-moz-placeholder {
@@ -8930,11 +8931,11 @@ textarea:-ms-input-placeholder {
 textarea::placeholder {
   color: #a0a8a0; }
 
-/* line 569, stdin */
+/* line 573, stdin */
 textarea {
   min-height: 10rem; }
 
-/* line 573, stdin */
+/* line 577, stdin */
 button#submit-button {
   padding: 0;
   margin: 1rem 0 0 0;
@@ -8943,25 +8944,24 @@ button#submit-button {
   background-color: #a0a8a0;
   border-radius: 50%;
   font-size: 1.5rem; }
-  /* line 581, stdin */
+  /* line 585, stdin */
   button#submit-button:hover {
     background-color: #768076; }
 
-/* line 586, stdin */
+/* line 590, stdin */
 .footer-section {
   background: #563f2d;
   min-height: 100px; }
-  /* line 589, stdin */
+  /* line 593, stdin */
   .footer-section p {
     color: #a0a8a0;
     margin-top: 2rem; }
-  /* line 593, stdin */
-  .footer-section h1 {
+  /* line 597, stdin */
+  .footer-section h1, .footer-section h2, .footer-section h3 {
     color: #a0a8a0;
-    font-size: 1.5rem;
     margin-bottom: 2rem; }
 
-/* line 600, stdin */
+/* line 603, stdin */
 section#contact {
   margin: 0;
   max-width: 62.5rem;
@@ -8977,7 +8977,7 @@ section#contact {
   section#contact:after {
     clear: both; }
 
-/* line 607, stdin */
+/* line 610, stdin */
 #map-contain {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
@@ -8989,7 +8989,7 @@ section#contact {
   width: 100%;
   height: 25rem; }
 
-/* line 616, stdin */
+/* line 619, stdin */
 #map-contain iframe {
   position: absolute;
   top: 0;
@@ -8997,7 +8997,7 @@ section#contact {
   width: 100% !important;
   height: 100% !important; }
 
-/* line 624, stdin */
+/* line 627, stdin */
 #contact-contain {
   margin: 0 auto;
   max-width: 62.5rem;
@@ -9010,7 +9010,7 @@ section#contact {
   /* line 240, /Volumes/LaCie2/dev/logan-patrone/bower_components/foundation/scss/foundation/components/_global.scss */
   #contact-contain:after {
     clear: both; }
-  /* line 627, stdin */
+  /* line 630, stdin */
   #contact-contain .contact-form {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
@@ -9021,7 +9021,7 @@ section#contact {
     float: none;
     text-align: center; }
     @media only screen and (min-width: 64.063em) {
-      /* line 627, stdin */
+      /* line 630, stdin */
       #contact-contain .contact-form {
         display: block;
         padding-left: 0.9375rem;
@@ -9032,15 +9032,15 @@ section#contact {
         margin-right: auto;
         float: none; } }
 
-/* line 637, stdin */
+/* line 640, stdin */
 #contact-success {
   background-color: #563f2d;
   border: none; }
-  /* line 640, stdin */
+  /* line 643, stdin */
   #contact-success h2 {
     text-align: center; }
 
-/* line 645, stdin */
+/* line 648, stdin */
 #lp-info-contain {
   margin: 0 auto;
   max-width: 62.5rem;
@@ -9052,7 +9052,7 @@ section#contact {
   /* line 240, /Volumes/LaCie2/dev/logan-patrone/bower_components/foundation/scss/foundation/components/_global.scss */
   #lp-info-contain:after {
     clear: both; }
-  /* line 647, stdin */
+  /* line 650, stdin */
   #lp-info-contain #lp-info {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
@@ -9062,7 +9062,7 @@ section#contact {
     margin-right: auto;
     float: none; }
     @media only screen and (min-width: 64.063em) {
-      /* line 647, stdin */
+      /* line 650, stdin */
       #lp-info-contain #lp-info {
         display: block;
         padding-left: 0.9375rem;
