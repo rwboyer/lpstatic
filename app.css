@@ -8832,8 +8832,8 @@ section.white-info {
     max-height: 0;
     overflow: hidden;
     visibility: hidden;
-    -webkit-transition: visibility 0s, max-height 1s;
-            transition: visibility 0s, max-height 1s; } }
+    -webkit-transition: visibility 0s, max-height 0.5s ease-in-out;
+            transition: visibility 0s, max-height 0.5s ease-in-out; } }
 
 /* line 505, stdin */
 #practice {

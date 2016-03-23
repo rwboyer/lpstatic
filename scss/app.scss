@@ -498,7 +498,7 @@ section.white-info{
     max-height: 0;
     overflow: hidden;
     visibility: hidden;
-    transition: visibility 0s, max-height 1s;
+    transition: visibility 0s, max-height 0.5s ease-in-out;
   }
 }
 
