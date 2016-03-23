@@ -404,7 +404,6 @@ section.white-info{
       .showme{
         max-height: 10rem;
         visibility: visible;
-        opacity: 1;
       }
       .info-bottom-arrow{
         display: none;
@@ -499,8 +498,7 @@ section.white-info{
     max-height: 0;
     overflow: hidden;
     visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s, opacity .5s linear, height 1s;
+    transition: visibility 0s, max-height 1s;
   }
 }
 

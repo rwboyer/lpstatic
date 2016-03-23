@@ -8713,27 +8713,26 @@ section.white-info {
       /* line 404, stdin */
       .info-block:hover .showme {
         max-height: 10rem;
-        visibility: visible;
-        opacity: 1; }
-      /* line 409, stdin */
+        visibility: visible; }
+      /* line 408, stdin */
       .info-block:hover .info-bottom-arrow {
         display: none; } }
   @media only screen and (min-width: 64.063em) {
-    /* line 414, stdin */
+    /* line 413, stdin */
     .info-block .inner {
       background-color: #FFFFFF;
       position: relative;
       border-radius: 10px;
       margin: 2rem;
       padding: 0 0 2rem 0; }
-      /* line 422, stdin */
+      /* line 421, stdin */
       .info-block .inner img {
         padding: 1rem; } }
 
-/* line 429, stdin */
+/* line 428, stdin */
 .bio-modal {
   padding: 0; }
-  /* line 431, stdin */
+  /* line 430, stdin */
   .bio-modal .bio-header {
     background-color: #a0a8a0;
     margin: 0 auto;
@@ -8746,7 +8745,7 @@ section.white-info {
     /* line 240, /Volumes/LaCie2/dev/logan-patrone/bower_components/foundation/scss/foundation/components/_global.scss */
     .bio-modal .bio-header:after {
       clear: both; }
-    /* line 434, stdin */
+    /* line 433, stdin */
     .bio-modal .bio-header h2 {
       display: block;
       padding-left: 0.9375rem;
@@ -8756,10 +8755,10 @@ section.white-info {
       color: #222222;
       text-transform: uppercase; }
       @media only screen and (max-width: 64em) {
-        /* line 434, stdin */
+        /* line 433, stdin */
         .bio-modal .bio-header h2 {
           font-size: 1rem; } }
-  /* line 444, stdin */
+  /* line 443, stdin */
   .bio-modal .bio-info {
     margin: 0 auto;
     max-width: 62.5rem;
@@ -8771,14 +8770,14 @@ section.white-info {
     /* line 240, /Volumes/LaCie2/dev/logan-patrone/bower_components/foundation/scss/foundation/components/_global.scss */
     .bio-modal .bio-info:after {
       clear: both; }
-    /* line 446, stdin */
+    /* line 445, stdin */
     .bio-modal .bio-info .bio-cv {
       padding-left: 0.9375rem;
       padding-right: 0.9375rem;
       width: 75%;
       float: left;
       padding: 1rem 1rem 1rem 1rem; }
-    /* line 450, stdin */
+    /* line 449, stdin */
     .bio-modal .bio-info .bio-extra {
       padding-left: 0.9375rem;
       padding-right: 0.9375rem;
@@ -8786,26 +8785,26 @@ section.white-info {
       float: left;
       padding: 0;
       text-align: center; }
-  /* line 456, stdin */
+  /* line 455, stdin */
   .bio-modal a.close-reveal-modal {
     color: #222222; }
-  /* line 459, stdin */
+  /* line 458, stdin */
   .bio-modal p {
     color: #222222;
     text-align: left;
     font-size: .8rem; }
-  /* line 464, stdin */
+  /* line 463, stdin */
   .bio-modal em {
     font-weight: bold;
     font-style: normal; }
-  /* line 468, stdin */
+  /* line 467, stdin */
   .bio-modal .fa {
     margin: 1rem 0 0 0;
     color: #563f2d;
     font-size: 2rem;
     text-align: center; }
 
-/* line 476, stdin */
+/* line 475, stdin */
 .info-bottom-arrow {
   display: none;
   position: absolute;
@@ -8814,10 +8813,10 @@ section.white-info {
   text-align: center;
   background: none; }
   @media only screen and (min-width: 64.063em) {
-    /* line 476, stdin */
+    /* line 475, stdin */
     .info-bottom-arrow {
       display: block; } }
-  /* line 486, stdin */
+  /* line 485, stdin */
   .info-bottom-arrow .fa {
     color: #222222;
     background-color: #FFFFFF;
@@ -8828,21 +8827,20 @@ section.white-info {
     border-radius: 50%; }
 
 @media only screen and (min-width: 64.063em) {
-  /* line 497, stdin */
+  /* line 496, stdin */
   .showme {
     max-height: 0;
     overflow: hidden;
     visibility: hidden;
-    opacity: 0;
-    -webkit-transition: visibility 0s, opacity .5s linear, height 1s;
-            transition: visibility 0s, opacity .5s linear, height 1s; } }
+    -webkit-transition: visibility 0s, max-height 1s;
+            transition: visibility 0s, max-height 1s; } }
 
-/* line 507, stdin */
+/* line 505, stdin */
 #practice {
   background: url("/images/wood.jpg");
   background-size: cover; }
 
-/* line 512, stdin */
+/* line 510, stdin */
 #practice-contain {
   margin: 0 auto;
   max-width: 62.5rem;
@@ -8859,11 +8857,11 @@ section.white-info {
   #practice-contain:after {
     clear: both; }
   @media only screen and (min-width: 64.063em) {
-    /* line 512, stdin */
+    /* line 510, stdin */
     #practice-contain {
       padding-left: 0;
       padding-right: 0; } }
-  /* line 522, stdin */
+  /* line 520, stdin */
   #practice-contain #description {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
@@ -8871,32 +8869,32 @@ section.white-info {
     float: left;
     padding: 2rem;
     background: #FFFFFF; }
-    /* line 526, stdin */
+    /* line 524, stdin */
     #practice-contain #description h1, #practice-contain #description h2, #practice-contain #description h3, #practice-contain #description h4 {
       color: #222222; }
-    /* line 529, stdin */
+    /* line 527, stdin */
     #practice-contain #description p {
       color: #222222;
       text-align: left; }
-    /* line 533, stdin */
+    /* line 531, stdin */
     #practice-contain #description ul {
       color: #a0a8a0;
       list-style: none; }
     @media only screen and (min-width: 64.063em) {
-      /* line 522, stdin */
+      /* line 520, stdin */
       #practice-contain #description {
         padding-left: 0.9375rem;
         padding-right: 0.9375rem;
         width: 58.33333%;
         float: left;
         padding: 2rem; } }
-  /* line 542, stdin */
+  /* line 540, stdin */
   #practice-contain #pretty {
     display: none;
     background: url("/images/image4.jpg");
     background-size: cover; }
     @media only screen and (min-width: 64.063em) {
-      /* line 542, stdin */
+      /* line 540, stdin */
       #practice-contain #pretty {
         display: block;
         padding-left: 0.9375rem;
@@ -8907,12 +8905,12 @@ section.white-info {
 /*
    FOOTER SECTION
    ========================================================================== */
-/* line 558, stdin */
+/* line 556, stdin */
 input[type=text], textarea {
   color: #a0a8a0;
   border-radius: 10px; }
 
-/* line 563, stdin */
+/* line 561, stdin */
 input::-webkit-input-placeholder {
   color: #a0a8a0; }
 input::-moz-placeholder {
@@ -8922,7 +8920,7 @@ input:-ms-input-placeholder {
 input::placeholder {
   color: #a0a8a0; }
 
-/* line 567, stdin */
+/* line 565, stdin */
 textarea::-webkit-input-placeholder {
   color: #a0a8a0; }
 textarea::-moz-placeholder {
@@ -8932,11 +8930,11 @@ textarea:-ms-input-placeholder {
 textarea::placeholder {
   color: #a0a8a0; }
 
-/* line 571, stdin */
+/* line 569, stdin */
 textarea {
   min-height: 10rem; }
 
-/* line 575, stdin */
+/* line 573, stdin */
 button#submit-button {
   padding: 0;
   margin: 1rem 0 0 0;
@@ -8945,25 +8943,25 @@ button#submit-button {
   background-color: #a0a8a0;
   border-radius: 50%;
   font-size: 1.5rem; }
-  /* line 583, stdin */
+  /* line 581, stdin */
   button#submit-button:hover {
     background-color: #768076; }
 
-/* line 588, stdin */
+/* line 586, stdin */
 .footer-section {
   background: #563f2d;
   min-height: 100px; }
-  /* line 591, stdin */
+  /* line 589, stdin */
   .footer-section p {
     color: #a0a8a0;
     margin-top: 2rem; }
-  /* line 595, stdin */
+  /* line 593, stdin */
   .footer-section h1 {
     color: #a0a8a0;
     font-size: 1.5rem;
     margin-bottom: 2rem; }
 
-/* line 602, stdin */
+/* line 600, stdin */
 section#contact {
   margin: 0;
   max-width: 62.5rem;
@@ -8979,7 +8977,7 @@ section#contact {
   section#contact:after {
     clear: both; }
 
-/* line 609, stdin */
+/* line 607, stdin */
 #map-contain {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
@@ -8991,7 +8989,7 @@ section#contact {
   width: 100%;
   height: 25rem; }
 
-/* line 618, stdin */
+/* line 616, stdin */
 #map-contain iframe {
   position: absolute;
   top: 0;
@@ -8999,7 +8997,7 @@ section#contact {
   width: 100% !important;
   height: 100% !important; }
 
-/* line 626, stdin */
+/* line 624, stdin */
 #contact-contain {
   margin: 0 auto;
   max-width: 62.5rem;
@@ -9012,7 +9010,7 @@ section#contact {
   /* line 240, /Volumes/LaCie2/dev/logan-patrone/bower_components/foundation/scss/foundation/components/_global.scss */
   #contact-contain:after {
     clear: both; }
-  /* line 629, stdin */
+  /* line 627, stdin */
   #contact-contain .contact-form {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
@@ -9023,7 +9021,7 @@ section#contact {
     float: none;
     text-align: center; }
     @media only screen and (min-width: 64.063em) {
-      /* line 629, stdin */
+      /* line 627, stdin */
       #contact-contain .contact-form {
         display: block;
         padding-left: 0.9375rem;
@@ -9034,15 +9032,15 @@ section#contact {
         margin-right: auto;
         float: none; } }
 
-/* line 639, stdin */
+/* line 637, stdin */
 #contact-success {
   background-color: #563f2d;
   border: none; }
-  /* line 642, stdin */
+  /* line 640, stdin */
   #contact-success h2 {
     text-align: center; }
 
-/* line 647, stdin */
+/* line 645, stdin */
 #lp-info-contain {
   margin: 0 auto;
   max-width: 62.5rem;
@@ -9054,7 +9052,7 @@ section#contact {
   /* line 240, /Volumes/LaCie2/dev/logan-patrone/bower_components/foundation/scss/foundation/components/_global.scss */
   #lp-info-contain:after {
     clear: both; }
-  /* line 649, stdin */
+  /* line 647, stdin */
   #lp-info-contain #lp-info {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
@@ -9064,7 +9062,7 @@ section#contact {
     margin-right: auto;
     float: none; }
     @media only screen and (min-width: 64.063em) {
-      /* line 649, stdin */
+      /* line 647, stdin */
       #lp-info-contain #lp-info {
         display: block;
         padding-left: 0.9375rem;
