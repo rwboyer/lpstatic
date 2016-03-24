@@ -478,12 +478,15 @@ a:hover{
       padding: 0;
       text-align: center;
       p{
-        font-weight: bold;
+        font-weight: bolder;
         text-align: center;
         margin-bottom: 0;
       }
       img{
         margin-bottom: 1rem;
+      }
+      h1, h2, h3, h4, h5, h6{
+        color: $jet;
       }
     }
   }
