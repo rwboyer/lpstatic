@@ -33,6 +33,10 @@ $xxlarge-range: (120.063em, 99999999em);
 .contain-to-grid {
     background-color: rgba(0, 0, 0, 0.3);
 }
+
+.contain-to-grid.darken{
+    background-color: rgba(0, 0, 0, 0.7);  
+}
  
 // FILL USED FOR HEADER
 .header-fill {
