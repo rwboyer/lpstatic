@@ -8612,7 +8612,7 @@ section.white-info {
   @media only screen and (min-width: 64.063em) {
     /* line 335, stdin */
     section.white-info {
-      min-height: 42.1875rem; } }
+      min-height: 43.75rem; } }
   /* line 344, stdin */
   section.white-info h1, section.white-info h2, section.white-info h3, section.white-info p {
     color: #222222; }
@@ -8694,7 +8694,7 @@ section.white-info {
     color: #222222; }
   /* line 391, stdin */
   .info-block p {
-    margin-bottom: 0; }
+    margin-bottom: 1rem; }
   /* line 394, stdin */
   .info-block a.bio {
     display: block;

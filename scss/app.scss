@@ -339,7 +339,7 @@ section.white-info{
   position: relative;
   padding-top: 2rem;
   @media #{$large-up}{
-    min-height: rem-calc(675);
+    min-height: rem-calc(700);
   }    
   h1, h2, h3, p{
     color: $jet;
@@ -389,7 +389,7 @@ section.white-info{
     color: $jet;
   }
   p{
-    margin-bottom: 0;
+    margin-bottom: 1rem;;
   }
   a.bio{
     display: block;
