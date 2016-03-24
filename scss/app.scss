@@ -88,12 +88,12 @@ $xxlarge-range: (120.063em, 99999999em);
         // MENU ITEM HOVERS
         li a:not(.button):hover {
             background: none;
-            border-bottom: 2px solid $primary-color;
+            border-bottom: 2px solid $lp-gray;
             color: $iron;
         }
         // MENU ITEM ACTIVE
         li.active a:not(.button) {
-            border-bottom: 2px solid $primary-color;
+            border-bottom: 2px solid $lp-gray;
             color: $iron;
             &:hover {
                 background: none;
@@ -178,7 +178,7 @@ $xxlarge-range: (120.063em, 99999999em);
                     margin-left: 0;
                 }
                 li a {
-                    background: $primary-color;
+                    background: $lp-gray;
                     border-radius: 0;
                 }
                 // NORMAL BUTTONS
@@ -188,14 +188,14 @@ $xxlarge-range: (120.063em, 99999999em);
                     padding: 10px 15px;
                     margin-top: 0;
                     &:hover {
-                        background: $primary-color;
+                        background: $lp-gray;
                         color: #fff;
                         margin-top: 0;
                     }
                 }
                 // ACTIVE BUTTON
                 li.active:not(.has-form) a:not(.button) {
-                    background: $primary-color;
+                    background: $lp-gray;
                     color: #fff;
                     padding: 10px 15px;
                     margin-top: 0;
@@ -283,14 +283,18 @@ $xxlarge-range: (120.063em, 99999999em);
 
 //Main Content
 
-h1, h2, h3{
+h1, h2, h3, h4, h5, h6{
   text-align: center;
   text-transform: uppercase;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
   color: $white;
 }
 
 p{
   text-align: center;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
 }
 
 em{
@@ -386,18 +390,28 @@ section.white-info{
     display: block;
     width: 10rem;
     margin: auto;
-    padding: rem-calc(5);
+    height: 2.5rem;
+    vertical-align: middle;
+    padding-top: rem-calc(7);
     background-color: #563f2d;
     color: $white;
     border-radius: 5px;
     font-family: $header-font-family;
     font-size: 1.2rem;
     text-transform: uppercase;
+    transition: background-color 0.5s ease-in-out;
+    &:hover{
+      background-color: $lp-gray;
+    }
   }
   .fa{
     margin: 1rem 0 0 0;
     color: #563f2d;
     font-size: 2rem;
+    transition: background-color 0.5s ease-in-out;
+    &:hover{
+      color: $lp-gray;
+    }
   }
   @media #{$large-up}{
     @include grid-column(4);
@@ -427,6 +441,10 @@ section.white-info{
   }
 }
 
+a:hover{
+  color: $lp-gray; 
+}
+
 .bio-modal{
   padding: 0;
   .bio-header{
@@ -454,6 +472,14 @@ section.white-info{
       @include grid-column(3);
       padding: 0;
       text-align: center;
+      p{
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 0;
+      }
+      img{
+        margin-bottom: 1rem;
+      }
     }
   }
   a.close-reveal-modal{
@@ -462,7 +488,7 @@ section.white-info{
   p{
     color: $jet;
     text-align: left;
-    font-size: .8rem;
+    font-size: 1rem;
   }
   em{
     font-weight: bold;
@@ -473,6 +499,10 @@ section.white-info{
     color: #563f2d;
     font-size: 2rem;
     text-align: center;
+    transition: background-color 0.5s ease-in-out;
+    &:hover{
+      color: $lp-gray;
+    }
   }
 }
 
@@ -527,6 +557,7 @@ section.white-info{
     background: $white;
     h1, h2, h3, h4{
       color: $jet;
+      text-align: left;
     }
     p {
       color: $jet;
@@ -647,6 +678,12 @@ section#contact{
 
 #lp-info-contain{
   @include grid-row();
+  img{
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+    max-width: 4rem;
+  }
   #lp-info{
     @include grid-column($columns:8, $center:true, $last-column:true);
     @media #{$large-up}{
