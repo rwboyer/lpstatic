@@ -246,6 +246,7 @@ $xxlarge-range: (120.063em, 99999999em);
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 59%, rgba(0, 0, 0, 0.5) 100%), url("/images/constr.jpg") no-repeat center center;
   background-size: cover;
   background-position: center bottom;
+  background-attachment: fixed;
   img{
     position: absolute;
     width: 20rem;
