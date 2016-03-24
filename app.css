@@ -8799,41 +8799,61 @@ a:hover {
     .bio-modal .bio-info .bio-cv {
       padding-left: 0.9375rem;
       padding-right: 0.9375rem;
-      width: 75%;
+      width: 100%;
       float: left;
       padding: 3rem; }
-    /* line 476, stdin */
+      @media only screen and (min-width: 64.063em) {
+        /* line 472, stdin */
+        .bio-modal .bio-info .bio-cv {
+          position: relative;
+          padding-left: 0.9375rem;
+          padding-right: 0.9375rem;
+          width: 75%;
+          right: 25%;
+          left: auto;
+          float: left; } }
+    /* line 479, stdin */
     .bio-modal .bio-info .bio-extra {
       padding-left: 0.9375rem;
       padding-right: 0.9375rem;
-      width: 25%;
+      width: 100%;
       float: left;
-      padding: 0;
       text-align: center; }
-      /* line 480, stdin */
+      /* line 483, stdin */
       .bio-modal .bio-info .bio-extra p {
         font-weight: bolder;
         text-align: center;
         margin-bottom: 0; }
-      /* line 485, stdin */
+      /* line 488, stdin */
       .bio-modal .bio-info .bio-extra img {
         margin-bottom: 1rem; }
-      /* line 488, stdin */
+      /* line 491, stdin */
       .bio-modal .bio-info .bio-extra h1, .bio-modal .bio-info .bio-extra h2, .bio-modal .bio-info .bio-extra h3, .bio-modal .bio-info .bio-extra h4, .bio-modal .bio-info .bio-extra h5, .bio-modal .bio-info .bio-extra h6 {
         color: #222222; }
-  /* line 493, stdin */
+      @media only screen and (min-width: 64.063em) {
+        /* line 479, stdin */
+        .bio-modal .bio-info .bio-extra {
+          position: relative;
+          padding-left: 0.9375rem;
+          padding-right: 0.9375rem;
+          width: 25%;
+          left: 75%;
+          right: auto;
+          float: left;
+          padding: 0; } }
+  /* line 500, stdin */
   .bio-modal a.close-reveal-modal {
     color: #222222; }
-  /* line 496, stdin */
+  /* line 503, stdin */
   .bio-modal p {
     color: #222222;
     text-align: left;
     font-size: 1rem; }
-  /* line 501, stdin */
+  /* line 508, stdin */
   .bio-modal em {
     font-weight: bold;
     font-style: normal; }
-  /* line 505, stdin */
+  /* line 512, stdin */
   .bio-modal .fa {
     margin: 1rem 0 0 0;
     color: #563f2d;
@@ -8841,11 +8861,11 @@ a:hover {
     text-align: center;
     -webkit-transition: background-color 0.5s ease-in-out;
             transition: background-color 0.5s ease-in-out; }
-    /* line 511, stdin */
+    /* line 518, stdin */
     .bio-modal .fa:hover {
       color: #a0a8a0; }
 
-/* line 517, stdin */
+/* line 524, stdin */
 .info-bottom-arrow {
   display: none;
   position: absolute;
@@ -8854,10 +8874,10 @@ a:hover {
   text-align: center;
   background: none; }
   @media only screen and (min-width: 64.063em) {
-    /* line 517, stdin */
+    /* line 524, stdin */
     .info-bottom-arrow {
       display: block; } }
-  /* line 527, stdin */
+  /* line 534, stdin */
   .info-bottom-arrow .fa {
     color: #222222;
     background-color: #FFFFFF;
@@ -8868,7 +8888,7 @@ a:hover {
     border-radius: 50%; }
 
 @media only screen and (min-width: 64.063em) {
-  /* line 538, stdin */
+  /* line 545, stdin */
   .showme {
     max-height: 0;
     overflow: hidden;
@@ -8876,12 +8896,12 @@ a:hover {
     -webkit-transition: visibility 0s, max-height 0.5s ease-in-out;
             transition: visibility 0s, max-height 0.5s ease-in-out; } }
 
-/* line 547, stdin */
+/* line 554, stdin */
 #practice {
   background: url("/images/wood.jpg");
   background-size: cover; }
 
-/* line 552, stdin */
+/* line 559, stdin */
 #practice-contain {
   margin: 0 auto;
   max-width: 62.5rem;
@@ -8898,11 +8918,11 @@ a:hover {
   #practice-contain:after {
     clear: both; }
   @media only screen and (min-width: 64.063em) {
-    /* line 552, stdin */
+    /* line 559, stdin */
     #practice-contain {
       padding-left: 0;
       padding-right: 0; } }
-  /* line 562, stdin */
+  /* line 569, stdin */
   #practice-contain #description {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
@@ -8910,33 +8930,33 @@ a:hover {
     float: left;
     padding: 2rem;
     background: #FFFFFF; }
-    /* line 566, stdin */
+    /* line 573, stdin */
     #practice-contain #description h1, #practice-contain #description h2, #practice-contain #description h3, #practice-contain #description h4 {
       color: #222222;
       text-align: left; }
-    /* line 570, stdin */
+    /* line 577, stdin */
     #practice-contain #description p {
       color: #222222;
       text-align: left; }
-    /* line 574, stdin */
+    /* line 581, stdin */
     #practice-contain #description ul {
       color: #a0a8a0;
       list-style: none; }
     @media only screen and (min-width: 64.063em) {
-      /* line 562, stdin */
+      /* line 569, stdin */
       #practice-contain #description {
         padding-left: 0.9375rem;
         padding-right: 0.9375rem;
         width: 58.33333%;
         float: left;
         padding: 2rem; } }
-  /* line 583, stdin */
+  /* line 590, stdin */
   #practice-contain #pretty {
     display: none;
     background: url("/images/image4.jpg");
     background-size: cover; }
     @media only screen and (min-width: 64.063em) {
-      /* line 583, stdin */
+      /* line 590, stdin */
       #practice-contain #pretty {
         display: block;
         padding-left: 0.9375rem;
@@ -8947,12 +8967,12 @@ a:hover {
 /*
    FOOTER SECTION
    ========================================================================== */
-/* line 599, stdin */
+/* line 606, stdin */
 input[type=text], textarea {
   color: #a0a8a0;
   border-radius: 10px; }
 
-/* line 604, stdin */
+/* line 611, stdin */
 input::-webkit-input-placeholder {
   color: #a0a8a0; }
 input::-moz-placeholder {
@@ -8962,7 +8982,7 @@ input:-ms-input-placeholder {
 input::placeholder {
   color: #a0a8a0; }
 
-/* line 608, stdin */
+/* line 615, stdin */
 textarea::-webkit-input-placeholder {
   color: #a0a8a0; }
 textarea::-moz-placeholder {
@@ -8972,11 +8992,11 @@ textarea:-ms-input-placeholder {
 textarea::placeholder {
   color: #a0a8a0; }
 
-/* line 612, stdin */
+/* line 619, stdin */
 textarea {
   min-height: 10rem; }
 
-/* line 616, stdin */
+/* line 623, stdin */
 button#submit-button {
   padding: 0;
   margin: 1rem 0 0 0;
@@ -8985,24 +9005,24 @@ button#submit-button {
   background-color: #a0a8a0;
   border-radius: 50%;
   font-size: 1.5rem; }
-  /* line 624, stdin */
+  /* line 631, stdin */
   button#submit-button:hover {
     background-color: #768076; }
 
-/* line 629, stdin */
+/* line 636, stdin */
 .footer-section {
   background: #563f2d;
   min-height: 100px; }
-  /* line 632, stdin */
+  /* line 639, stdin */
   .footer-section p {
     color: #a0a8a0;
     margin-top: 2rem; }
-  /* line 636, stdin */
+  /* line 643, stdin */
   .footer-section h1, .footer-section h2, .footer-section h3 {
     color: #a0a8a0;
     margin-bottom: 2rem; }
 
-/* line 642, stdin */
+/* line 649, stdin */
 section#contact {
   margin: 0;
   max-width: 62.5rem;
@@ -9018,7 +9038,7 @@ section#contact {
   section#contact:after {
     clear: both; }
 
-/* line 649, stdin */
+/* line 656, stdin */
 #map-contain {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
@@ -9030,7 +9050,7 @@ section#contact {
   width: 100%;
   height: 25rem; }
 
-/* line 658, stdin */
+/* line 665, stdin */
 #map-contain iframe {
   position: absolute;
   top: 0;
@@ -9038,7 +9058,7 @@ section#contact {
   width: 100% !important;
   height: 100% !important; }
 
-/* line 666, stdin */
+/* line 673, stdin */
 #contact-contain {
   margin: 0 auto;
   max-width: 62.5rem;
@@ -9051,7 +9071,7 @@ section#contact {
   /* line 240, /Volumes/LaCie2/dev/logan-patrone/bower_components/foundation/scss/foundation/components/_global.scss */
   #contact-contain:after {
     clear: both; }
-  /* line 669, stdin */
+  /* line 676, stdin */
   #contact-contain .contact-form {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
@@ -9062,7 +9082,7 @@ section#contact {
     float: none;
     text-align: center; }
     @media only screen and (min-width: 64.063em) {
-      /* line 669, stdin */
+      /* line 676, stdin */
       #contact-contain .contact-form {
         display: block;
         padding-left: 0.9375rem;
@@ -9073,15 +9093,15 @@ section#contact {
         margin-right: auto;
         float: none; } }
 
-/* line 679, stdin */
+/* line 686, stdin */
 #contact-success {
   background-color: #563f2d;
   border: none; }
-  /* line 682, stdin */
+  /* line 689, stdin */
   #contact-success h2 {
     text-align: center; }
 
-/* line 687, stdin */
+/* line 694, stdin */
 #lp-info-contain {
   margin: 0 auto;
   max-width: 62.5rem;
@@ -9093,13 +9113,13 @@ section#contact {
   /* line 240, /Volumes/LaCie2/dev/logan-patrone/bower_components/foundation/scss/foundation/components/_global.scss */
   #lp-info-contain:after {
     clear: both; }
-  /* line 689, stdin */
+  /* line 696, stdin */
   #lp-info-contain img {
     display: block;
     margin: auto;
     margin-top: 2rem;
     max-width: 4rem; }
-  /* line 695, stdin */
+  /* line 702, stdin */
   #lp-info-contain #lp-info {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
@@ -9109,7 +9129,7 @@ section#contact {
     margin-right: auto;
     float: none; }
     @media only screen and (min-width: 64.063em) {
-      /* line 695, stdin */
+      /* line 702, stdin */
       #lp-info-contain #lp-info {
         display: block;
         padding-left: 0.9375rem;
